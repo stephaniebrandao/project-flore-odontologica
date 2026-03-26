@@ -1,0 +1,55 @@
+button {
+    border: none;
+    background: none;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Roboto Slab';
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.nav {
+    color: #3C4A28;
+}
+
+.nav:hover{
+    background-color: #3C4A28;
+    color: white;
+    border-radius: 8px;
+    transition: 400ms;
+}
+
+.primary {
+    color: #3C4A28;
+    font-weight: 600;
+}
+
+.primary:hover {
+    background-color: #3C4A28;
+    color: white;
+    border-radius: 8px;
+    transition: 400ms;
+}
+
+.secondary {
+    font-weight: 600;
+}
+
+.secondary:hover {
+    background-color: rgba(246, 246, 239);
+    color:#3C4A28;
+    border-radius: 8px;
+    transition: 400ms;
+}
+
+.tertiary {
+    font-size: 0.7em;
+    display: flex;
+    padding: 0;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.tertiary:hover {
+    text-decoration: underline;
+}
