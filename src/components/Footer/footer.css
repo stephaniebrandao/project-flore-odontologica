@@ -1,0 +1,66 @@
+.flore-footer {
+  background-color: rgba(119, 136, 92, 0.2);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-span{
+  display: grid;
+  grid-template-rows: 40px 100px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-span > a {
+    display: grid;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+
+img {
+    /*background-color: white*/
+  background-color: rgba(246, 246, 239, 0.8);
+  border-radius: 50%;
+}
+
+.flore-florescer {
+    display: grid;
+    justify-content: center;
+    grid-row: 3 / 4;
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: 'Cormorant Garamond';
+}
+
+.ul-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+}
+
+.sobre-fac-corpo {
+    justify-items: start;
+}
+
+.espec {
+    justify-items: start;
+}
+
+.info-perg-cont {
+    justify-items: start;
+}
+
+.direitos-flore {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Cormorant Garamond';
+    margin: 30px 0;
+}
+
+figure {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
