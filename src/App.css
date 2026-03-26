@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto+Slab:wght@100..900&display=swap");
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  color: #29331b;
+}
+
+body {
+  margin: 0;
+  /*background-color: white*/
+  background-color: rgba(246, 246, 239, 0.3);
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 60px;
+}
+
+.container-info {
+  display: flex;
+  align-items: center;
+}
+
+.container-info > .nome-horas > h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 32px;
+  margin: 0;
+}
+
+.container-info > .nome-horas > h3 {
+  font-family: "Cormorant Garamond";
+  font-size: 22px;
+  margin: 0;
+}
+
+.container-info > .nome-horas > .horarios {
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  margin: 0;
+  line-height: 0.4rem;
+}
+
+.container-endereco {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Slab";
+}
+
+.container-endereco > p {
+  font-size: 12px;
+}
+
+.container-endereco > a > p {
+  font-size: 12px;
+}
+
+a {
+  color: #29331b;
+  text-decoration: none;
+}
+
+.container-consulta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 90px 0;
+  color: #3c4a28;
+}
+
+.container-consulta p {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  margin: 5px;
+}
+
+.container-consulta h1 {
+  font-family: "Cormorant Garamond";
+  margin: 10px;
+}
+
+.container-consulta h1::before {
+  content: "";
+  width: 58px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 235px;
+  margin: auto;
+  background-color: #3c4a28;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 260px 1fr 260px;
+  background-image: url("/src/components/Images/background-flore.png");
+  background-color: rgb(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  border: 1px solid #3c4a28;
+  margin-bottom: 30px;
+  color: #29331b;
+}
+
+.children-container {
+  display: flex;
+  margin: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  grid-column: 2 / 3;
+}
+
+.children-container h2 {
+  font-family: "Cormorant Garamond";
+}
+
+.children-container p {
+  font-family: "Roboto Slab";
+  border-radius: 10px;
+  text-shadow: 0 0 20px #3c4a28;
+}
