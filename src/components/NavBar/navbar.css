@@ -1,0 +1,46 @@
+ul {
+  list-style-type: none;
+}
+
+.gradient-bar {
+  background: linear-gradient(
+    to right,
+    #bdc8ac 0%,
+    transparent 35%,
+    transparent 65%,
+    #bdc8ac 100%
+  );
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-flore {
+  display: flex;
+  justify-self: center;
+  background-color: rgba(246, 246, 239, 0);
+}
+
+.nav-sup ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-sup li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 10px;
+}
+
+.nav-principal ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 95%;
+  margin-left: 35px;
+}
