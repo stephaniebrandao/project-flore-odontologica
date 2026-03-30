@@ -14,6 +14,7 @@ function Footer() {
         <section className="image-span">
           <Link to="/">
             <img
+            className="image-footer"
               src="/src/components/Images/Logo Vertical - verde - cópia.png"
               alt="Logo Vertical Flore - verde"
               width={110}
@@ -64,19 +65,16 @@ function Footer() {
                   Prótese Dentária
                 </Button>
                 <Button variant={"tertiary"} isActive={false}>
-                  Cirurgia Oral
+                  Ortodontia
+                </Button>
+                <Button variant={"tertiary"} isActive={false}>
+                  Odontologia Infantil
                 </Button>
                 <Button variant={"tertiary"} isActive={false}>
                   Implantes Dentários
                 </Button>
                 <Button variant={"tertiary"} isActive={false}>
                   Endodontia
-                </Button>
-                <Button variant={"tertiary"} isActive={false}>
-                  Ortodontia
-                </Button>
-                <Button variant={"tertiary"} isActive={false}>
-                  Odontologia Infantil
                 </Button>
                 <Button variant={"tertiary"} isActive={false}>
                   Mais...
@@ -88,13 +86,6 @@ function Footer() {
                 <Link to="informacoes">
                   <Button variant={"secondary"} isActive={false}>
                     INFORMAÇÕES IMPORTANTES
-                  </Button>
-                </Link>
-              </li>
-              <li>
-                <Link to="perguntas">
-                  <Button variant={"secondary"} isActive={false}>
-                    PERGUNTAS FREQUENTES
                   </Button>
                 </Link>
               </li>

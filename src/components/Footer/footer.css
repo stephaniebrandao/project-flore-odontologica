@@ -6,7 +6,7 @@
 
 .image-span{
   display: grid;
-  grid-template-rows: 40px 100px 30px;
+  grid-template-rows: 15px 100px 30px;
   justify-content: center;
   align-items: center;
 }
@@ -15,19 +15,20 @@
     display: grid;
     grid-row: 2 / 3;
     justify-self: center;
+    margin-bottom: 20px;
 }
 
-img {
-    /*background-color: white*/
-  background-color: rgba(246, 246, 239, 0.8);
-  border-radius: 50%;
+.image-footer {
+    margin-top: 60px;
+    border-radius: 50%;
+    background-color: rgba(246, 246, 239, 0.8);
 }
 
 .flore-florescer {
     display: grid;
     justify-content: center;
     grid-row: 3 / 4;
-    margin-top: 10px;
+    margin-top: 80px;
     font-size: 1em;
     font-family: 'Cormorant Garamond';
 }
