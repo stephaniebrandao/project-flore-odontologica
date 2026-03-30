@@ -1,60 +1,108 @@
+import Banner from "./components/Banner/Banner";
+import Button from "./components/Button/Button";
+import InsideBanner from "./components/InsideBanner/InsideBanner";
 import "./App.css";
-import MapPin from "./assets/MapPin";
-import Phone from "./assets/Phone";
+import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+import InfoFlore from "./components/Info-Flore/InfoFlore";
 
 function App() {
+  const POSICAO_CLINICA = { lat: -7.167731, lng: -34.830455 };
+
+  const nossosDentistas = (
+    <p>
+      Mais do que tratar sorrisos, cuidamos de pessoas! Para garantir excelência
+      em cada tratamento, contamos com um corpo clínico de especialistas em
+      diversas áreas da Odontologia, que estão prontos para oferecer um
+      atendimento personalizado e seguro para você e toda a sua família.
+    </p>
+  );
+
+  const nossaClinica = (
+    <p>
+      Localizada em Mangabeira VII, na cidade de João Pessoa - PB, a Flore
+      Odontológica oferece um ambiente moderno e acolhedor projetado para o seu
+      conforto. Venha nos visitar!
+    </p>
+  );
   return (
     <>
+      <section className="container-index-flore">
+          <div>
+            <img
+              className="kalygia-flore-img"
+              src="src/components/Images/photo_kalygia.jpg"
+              alt="Dra. Kalygia Cavalcanti - diretora clínica"
+              width={205}
+              height={300}
+            />
+          </div>
+          <div className="intro-flore">
+            <h1>Sua jornada para um sorriso radiante começa aqui!</h1>
+            <p>
+              Na Flore Odontológica, acreditamos que cada sorriso carrega uma
+              história única — e é nossa missão cuidar de cada uma com
+              dedicação, precisão e carinho.
+            </p>
+
+            <p>
+              Sob a direção clínica da Dra. Kalygia Cavalcanti, nossa equipe une
+              tecnologia de ponta, atendimento humanizado e uma abordagem
+              personalizada para transformar a experiência odontológica em algo
+              leve, seguro e inspirador.
+            </p>
+
+            <p>
+              A primeira consulta é o início dessa jornada: um momento de
+              escuta, avaliação e acolhimento, onde entendemos suas necessidades
+              e traçamos juntos o melhor caminho para cuidar do seu sorriso.
+            </p>
+            <aside>Venha florescer conosco!</aside>
+          </div>
+      </section>
+
       <div className="container-consulta">
-        <p>ONLINE OU POR TELEFONE</p>
-        <h1>MARQUE JÁ A SUA CONSULTA</h1>
+          <p>ONLINE OU POR TELEFONE</p>
+          <h1>MARQUE JÁ A SUA CONSULTA</h1>
+        </div>
+
+      <div className="consulta-flore">
+        <Button variant={"nav"} isActive={false}>
+          Marque aqui!
+        </Button>
       </div>
 
-      <article>
-        <div className="container-info">
-          <figure>
-            <img
-              src="/src/components/Images/flore-entrada.png"
-              alt="Recepção da clínica Flore"
-              width={150}
-              height={150}
-            />
-          </figure>
+      <Banner variant={"withBg"}>
+        <InsideBanner
+          title={"Conheça os nossos dentistas!"}
+          info={nossosDentistas}
+        />
+        <Button variant={"nav"} isActive={false}>
+          Saiba mais!
+        </Button>
+      </Banner>
 
-          <div className="nome-horas">
-            <h2>Flore Odontológica</h2>
-            <h3>Mangabeira VII</h3>
-            <div className="horarios">
-              <p>
-                <b>segunda a sexta:</b> 9h às 21h
-              </p>
-              <p>
-                <b>sábado:</b> 8h às 12h
-              </p>
-              <p>
-                <b>domingo:</b> encerrado
-              </p>
-            </div>
-          </div>
-        </div>
+      <Banner variant={"withoutBg"}>
+        <InsideBanner
+          title={"A nossa clínica"}
+          info={nossaClinica}
+        />
+      </Banner>
 
-        <div className="container-endereco">
-          <span>
-            R. Des. Júlio Rique Filho, 12 - Mangabeira VII, João Pessoa - PB,
-            58058-236, Brasil
-          </span>
+      <section className="container-mapa">
+        <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+          <Map
+            className="mapa"
+            defaultCenter={POSICAO_CLINICA}
+            defaultZoom={16}
+            gestureHandling="cooperative"
+            disableDefaultUI={false}
+          >
+            <Marker position={POSICAO_CLINICA} />
+          </Map>
+        </APIProvider>
+      </section>
 
-          <a href="https://maps.app.goo.gl/qDHLr3eympCKU7sC7">
-            <p>
-              <MapPin /> Direções via Google Maps
-            </p>
-          </a>
-          <p>
-            <Phone />
-            <a href="tel:+55 83 99895-0550"> 83 99895-0550</a>
-          </p>
-        </div>
-      </article>
+      <InfoFlore />
     </>
   );
 }
