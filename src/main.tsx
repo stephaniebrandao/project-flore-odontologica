@@ -6,13 +6,12 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import NavBar from './components/NavBar/NavBar.tsx'
 import MarcarConsulta from './components/Marcar Consulta/MarcarConsulta.tsx'
 import InformacoesImportantes from './components/Informações Importantes/InformacoesImportantes.tsx'
-import SobreNos from './components/Sobre-Nos/SobreNos.tsx'
 import Footer from './components/Footer/Footer.tsx'
 import Facilidades from './components/Facilidades/Facilidades.tsx'
 import CorpoClinico from './components/Corpo-Clinico/CorpoClinico.tsx'
 import Especialidades from './components/Especialidades/Especialidades.tsx'
 import Contatos from './components/Contatos/Contatos.tsx'
-import PerguntasFrequentes from './components/FAQ/PerguntasFrequentes.tsx'
+import SobreNos from './components/SobreNos/SobreNos.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -31,7 +30,6 @@ createRoot(document.getElementById('root')!).render(
         </Route>
         <Route path="/especialidades" element={<Especialidades />} />
         <Route path="/contatos" element={<Contatos />} />
-        <Route path="/perguntas" element={<PerguntasFrequentes />} />
       </Routes>
       <Footer />
     </BrowserRouter>
