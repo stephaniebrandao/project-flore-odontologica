@@ -1,0 +1,51 @@
+.header-consulta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-consulta > h1 {
+    font-family: 'Cormorant Garamond';
+}
+
+.header-consulta > h3 {
+    font-size: 14px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    text-align: center;
+}
+
+.secao-marcacao {
+    display: flex;
+    margin: 30px 400px;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: "Roboto Slab";
+    background-color: rgba(119, 136, 92, 0.2);
+}
+
+.secao-marcacao > form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: stretch;
+    max-width: 500px;
+}
+
+.secao-marcacao > form > input {
+    height: 24px;
+}
+
+.secao-marcacao > form > select {
+    height: 30px;
+}
+
+.secao-marcacao > form > textarea {
+    min-height: 100px;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
