@@ -1,0 +1,29 @@
+.quem-somos {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    text-align: center;
+}
+
+.quem-somos > h1 {
+    font-family: "Cormorant Garamond"
+}
+
+.quem-somos > p {
+    font-family: "Roboto Slab";
+}
+
+.missao-visao-valores {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 60px;
+    padding: 30px;
+    background-color: rgba(119, 136, 92, 0.2);
+    border-radius: 10px;
+}
+
+.div-info-flore {
+    margin: 60px auto;
+}
