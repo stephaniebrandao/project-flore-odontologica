@@ -1,0 +1,37 @@
+.banner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-info > h2 {
+    font-family: "Cormorant Garamond";
+}
+
+.banner-info > p {
+    font-family: "Roboto Slab";
+    border-radius: 10px;
+}
+
+.withBg {
+  background-image: url("/src/components/Images/background-flore.png");
+  background-color: rgb(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  border: 1px solid #3c4a28;
+  margin-bottom: 20px;
+  padding: 0 300px;
+}
+
+.withBg > .children-container p {
+    text-shadow: 0 0 20px #3c4a28;
+}
+
+.withoutBg {
+  margin: 0 20%;
+  padding: 0 100px;
+}
+
+.withoutBg > .children-container p {
+    text-shadow: none;
+}
