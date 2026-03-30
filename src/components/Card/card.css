@@ -1,0 +1,23 @@
+.container-info {
+  display: flex;
+  align-items: center;
+}
+
+.container-info > .titulos-horas > h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 32px;
+  margin: 0;
+}
+
+.container-info > .titulos-horas > h3 {
+  font-family: "Cormorant Garamond";
+  font-size: 22px;
+  margin: 0;
+}
+
+.container-info > .titulos-horas > .info-horarios {
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  margin: 0;
+  line-height: 1rem;
+}
