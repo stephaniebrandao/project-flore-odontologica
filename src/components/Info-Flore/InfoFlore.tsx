@@ -3,8 +3,6 @@ import Phone from "../../assets/Phone";
 import Card from "../Card/Card";
 import "./infoFlore.css";
 
-// import floreEntrada from "./components/Images/flore-entrada.png"
-
 function InfoFlore() {
   const horarios = (
     <div>
@@ -26,22 +24,16 @@ function InfoFlore() {
     <>
       <article>
         <div className="container-info">
-          <figure>
-            <img
-            className="recepcao-clinica"
+          <Card
+            image={<img
+              className="recepcao-clinica"
               src="/src/components/Images/flore-entrada.png"
               alt="Recepção da clínica Flore"
               width={150}
-              height={150}
-            />
-          </figure>
-
-          <Card
-            // image={floreEntrada}
+              height={150} />}
             title={"Flore Odontológica"}
             subtitle={"Mangabeira VII"}
-            info={horarios}
-          />
+            info={horarios} variant={"normal"}          />
         </div>
 
         <div className="container-endereco">
