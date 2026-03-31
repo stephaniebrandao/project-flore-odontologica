@@ -4,14 +4,15 @@ import "./button.css"
 interface BtnCharacteristics {
     variant: 'nav' | 'primary' | 'secondary' | 'tertiary',
     isActive: boolean,
+    isDisabled?: boolean
     children: ReactNode
   }
   
   
-  function Button ({variant, isActive, children}: BtnCharacteristics) {
+  function Button ({variant, isActive, isDisabled, children}: BtnCharacteristics) {
       return (
         <>
-          <button className={`${variant} ${isActive}`}>{children}</button>
+          <button className={`${variant} ${isActive} ${isDisabled}`}>{children}</button>
         </>
       )
   }
