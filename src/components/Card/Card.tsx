@@ -2,16 +2,17 @@ import type { ReactNode } from "react";
 import "./card.css";
 
 interface ICard {
-  title: string;
-  subtitle: string;
-  info: ReactNode;
-  image?: string | ReactNode;
+  title: string | string[];
+  subtitle: string | string[];
+  info?: ReactNode | string[];
+  image?: string | string[] | ReactNode;
+  variant: "normal" | "specs";
 }
 
-function Card({ title, subtitle, info, image }: ICard) {
+function Card({ title, subtitle, info, image, variant }: ICard) {
   return (
     <>
-      <section className="container-info">
+      <section className={`${variant}`}>
         <div>
           <figure>{image}</figure>
         </div>

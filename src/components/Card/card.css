@@ -1,23 +1,49 @@
-.container-info {
+.normal {
   display: flex;
   align-items: center;
 }
 
-.container-info > .titulos-horas > h2 {
+.normal > .titulos-horas > h2 {
   font-family: "Cormorant Garamond";
   font-size: 32px;
   margin: 0;
 }
 
-.container-info > .titulos-horas > h3 {
+.normal > .titulos-horas > h3 {
   font-family: "Cormorant Garamond";
   font-size: 22px;
   margin: 0;
 }
 
-.container-info > .titulos-horas > .info-horarios {
+.normal > .titulos-horas > .info-horarios {
   font-family: "Roboto Slab";
   font-size: 12px;
+  margin: 0;
+  line-height: 1rem;
+}
+
+.specs {
+  display: flex;
+  border: 1px solid rgb(200, 200, 200);
+  background-color: rgba(119, 136, 92, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.specs > .titulos-horas > h2 {
+  font-family: "Cormorant Garamond";
+  font-size: 24px;
+  margin: 0;
+}
+
+.specs > .titulos-horas > h3 {
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 400;
   margin: 0;
   line-height: 1rem;
 }
