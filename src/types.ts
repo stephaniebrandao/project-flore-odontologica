@@ -8,9 +8,8 @@ export interface IEspecialidades {
     imagem: string
 }
 
-// export interface ITasks {
-//     nome: string,
-//     email: string,
-//     telefone: number,
-//     mensagem: string,
-// }
+export type Horarios = {
+    id: string,
+    create_at: string,
+    hora: string,
+}
