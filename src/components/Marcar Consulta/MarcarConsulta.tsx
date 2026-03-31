@@ -82,7 +82,6 @@ function MarcarConsulta() {
     fetchHorarios();
   }, []);
 
-
   return (
     <>
       <header className="header-consulta">
