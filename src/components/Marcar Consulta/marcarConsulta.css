@@ -30,6 +30,7 @@
     margin: 0 auto;
     width: stretch;
     max-width: 500px;
+    gap: 10px;
 }
 
 .secao-marcacao > form > input {
