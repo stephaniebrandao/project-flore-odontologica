@@ -9,19 +9,6 @@ function SobreNos() {
   const visao =
     "Ser referência em odontologia humanizada e moderna no Brasil, sendo reconhecida não apenas pela precisão técnica, mas pela capacidade de transformar vidas através do sorriso.";
 
-  const humanizacao =
-    "Humanização: Tratamos pessoas, não apenas dentes. O acolhimento é nossa prioridade.";
-  const etica =
-    "Ética e Transparência: Clareza total em cada diagnóstico e conduta clínica.";
-  const inovacao =
-    "Inovação: Investimento constante em tecnologias que garantam tratamentos mais rápidos e confortáveis.";
-  const excelencia =
-    "Excelência: Rigor técnico em cada detalhe, do atendimento inicial ao pós-procedimento.";
-  const sustentabilidade =
-    "Sustentabilidade: Cuidado com o meio ambiente e com o ecossistema de saúde onde estamos inseridos.";
-
-  const valores = `${humanizacao} ${etica} ${inovacao} ${excelencia} ${sustentabilidade}`;
-
   return (
     <>
       <article className="quem-somos">
@@ -49,7 +36,33 @@ function SobreNos() {
 
         <InsideBanner title={"Visão:"} info={visao} />
 
-        <InsideBanner title={"Valores:"} info={valores} />
+        <InsideBanner
+          title={"Valores:"}
+          info={
+            <ul>
+              <li>
+                <strong>Humanização:</strong> Tratamos pessoas, não apenas dentes. O acolhimento
+                é nossa prioridade.
+              </li>
+              <li>
+                <strong>Ética e Transparência:</strong> Clareza total em cada diagnóstico e
+                conduta clínica.
+              </li>
+              <li>
+                <strong>Inovação:</strong> Investimento constante em tecnologias que garantam
+                tratamentos mais rápidos e confortáveis.
+              </li>
+              <li>
+                <strong>Excelência:</strong> Rigor técnico em cada detalhe, do atendimento
+                inicial ao pós-procedimento.
+              </li>
+              <li>
+                <strong>Excelência:</strong> Rigor técnico em cada detalhe, do atendimento
+                inicial ao pós-procedimento.
+              </li>
+            </ul>
+          }
+        />
       </section>
 
       <div className="div-info-flore">
