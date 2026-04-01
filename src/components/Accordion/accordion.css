@@ -1,0 +1,54 @@
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgba(119, 136, 92, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
+    margin: 2rem 0;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    position: relative;
+    border: 1px solid rgb(119, 136, 92);
+}
+
+.open {
+    border-top: 4px solid rgb(119, 136, 92);
+}
+
+.icon {
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top: -3px;
+    transition: transform 0.3s ease;
+}
+
+.open .icon {
+    transform: rotate(45deg);
+}
+
+.content {
+    display: none;
+}
+
+.header.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.header.open > .content {
+    display: block;
+    font-family: "Roboto Slab";
+  font-size: 14px;
+  
+}
+
+.title {
+    text-align: center;
+    font-family: "Cormorant Garamond";
+}
