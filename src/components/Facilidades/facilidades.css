@@ -1,0 +1,34 @@
+.convenios-particular {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: rgba(119, 136, 92, 0.2);
+  border-radius: 10px;
+  padding: 20px 30px 20px 50px;
+}
+
+.convenios-particular > li {
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.convenios-particular > p {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.convenios-particular > ul > li {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.convenios-particular > .pagamentos {
+    text-align: center;
+    margin-top: 60px;
+}
