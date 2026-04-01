@@ -3,6 +3,7 @@ import Button from "../Button/Button";
 import "./marcarConsulta.css";
 import { supabase } from "../../supabaseClient";
 import type { Horarios, IEspecialidades } from "../../types";
+import Header from "../Header/Header";
 
 function MarcarConsulta() {
   const [newMarcacao, setNewMarcacao] = useState({
@@ -82,15 +83,12 @@ function MarcarConsulta() {
     fetchHorarios();
   }, []);
 
+  const subtitle = "Marque aqui a sua consulta na Flore Odontológica. A sua marcação será confirmada por e-mail e/ou mensagem."
+
   return (
     <>
-      <header className="header-consulta">
-        <h1>Marque aqui a sua consulta!</h1>
-        <h3>
-          Marque aqui a sua consulta na Flore Odontológica. <br /> A sua
-          marcação será confirmada por e-mail e/ou mensagem.
-        </h3>
-      </header>
+
+    <Header title={"Marque aqui a sua consulta!"} subtitle={subtitle} variant={"first"} />
 
       <section>
         <div className="secao-marcacao">

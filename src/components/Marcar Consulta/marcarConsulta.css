@@ -1,20 +1,3 @@
-.header-consulta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header-consulta > h1 {
-    font-family: 'Cormorant Garamond';
-}
-
-.header-consulta > h3 {
-    font-size: 14px;
-    font-family: "Roboto Slab";
-    font-weight: 400;
-    text-align: center;
-}
-
 .secao-marcacao {
     display: flex;
     margin: 30px 400px;
