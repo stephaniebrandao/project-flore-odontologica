@@ -1,4 +1,3 @@
-import InfoFlore from "../Info-Flore/InfoFlore";
 import InsideBanner from "../InsideBanner/InsideBanner";
 import "./sobreNos.css";
 
@@ -64,10 +63,6 @@ function SobreNos() {
           }
         />
       </section>
-
-      <div className="div-info-flore">
-        <InfoFlore />
-      </div>
     </>
   );
 }
