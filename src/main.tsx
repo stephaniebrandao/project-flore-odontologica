@@ -12,6 +12,7 @@ import CorpoClinico from './components/Corpo-Clinico/CorpoClinico.tsx'
 import Especialidades from './components/Especialidades/Especialidades.tsx'
 import Contatos from './components/Contatos/Contatos.tsx'
 import SobreNos from './components/SobreNos/SobreNos.tsx'
+import InfoFlore from './components/Info-Flore/InfoFlore.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -23,14 +24,11 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/informacoes" element={<InformacoesImportantes />} />
         <Route path="/sobre-nos" element={<SobreNos />} />
         <Route path="/facilidades" element={<Facilidades />} />
-        <Route path="/corpo-clinico">
-          <Route index element={<CorpoClinico />} />
-          <Route path='diretora-clinica' element={<h1>Diretora Clínica</h1>}/>
-          <Route path='especialistas'  element={<h1>Especialistas</h1>}/>
-        </Route>
+        <Route path="/corpo-clinico" element={<CorpoClinico />} />
         <Route path="/especialidades" element={<Especialidades />} />
         <Route path="/contatos" element={<Contatos />} />
       </Routes>
+      <InfoFlore />
       <Footer />
     </BrowserRouter>
   </StrictMode>
