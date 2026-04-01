@@ -3,7 +3,7 @@ import { supabase } from "../../supabaseClient";
 import "./especialidades.css";
 import type { IEspecialidades } from "../../types";
 import Card from "../Card/Card";
-import InfoFlore from "../Info-Flore/InfoFlore";
+import Header from "../Header/Header";
 
 function Especialidades() {
   const [especialidades, setEspecialidades] = useState<IEspecialidades[]>([]);
@@ -23,15 +23,17 @@ function Especialidades() {
     fetchEspecialidades();
   }, []);
 
+  const subtitle =
+    "Explore como cada uma de nossas especialidades pode transformar o seu bem-estar.";
   return (
     <>
+      <Header
+        title={"Especialidades Focadas na Sua Saúde"}
+        subtitle={subtitle}
+        variant={"first"}
+      />
       <div className="title-specs">
-        <h1>Especialidades Focadas na Sua Saúde</h1>
-        <p>
-          Explore como cada uma de nossas especialidades pode transformar o seu
-          bem-estar.
-        </p>
-        <p> Estamos prontos para cuidar de si!</p>
+        <p>Estamos prontos para cuidar de si!</p>
         <aside>Venha florescer conosco!</aside>
       </div>
       <div className="especialidades-api">
@@ -49,8 +51,6 @@ function Especialidades() {
           />
         ))}
       </div>
-
-      <InfoFlore />
     </>
   );
 }
