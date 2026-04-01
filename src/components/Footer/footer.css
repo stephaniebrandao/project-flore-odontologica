@@ -19,7 +19,7 @@
 }
 
 .image-footer {
-    margin-top: 60px;
+    margin-top: 10px;
     border-radius: 50%;
     background-color: rgba(246, 246, 239, 0.8);
 }
@@ -28,7 +28,6 @@
     display: grid;
     justify-content: center;
     grid-row: 3 / 4;
-    margin-top: 80px;
     font-size: 1em;
     font-family: 'Cormorant Garamond';
 }
@@ -39,11 +38,11 @@
     padding: 0;
 }
 
-.sobre-fac-corpo {
+.sobre-fac {
     justify-items: start;
 }
 
-.espec {
+.espec-corpo {
     justify-items: start;
 }
 

@@ -14,7 +14,7 @@ function Footer() {
         <section className="image-span">
           <Link to="/">
             <img
-            className="image-footer"
+              className="image-footer"
               src="/src/components/Images/Logo Vertical - verde - cópia.png"
               alt="Logo Vertical Flore - verde"
               width={110}
@@ -25,7 +25,7 @@ function Footer() {
         </section>
         <nav>
           <ul className="ul-footer">
-            <div className="sobre-fac-corpo">
+            <div className="sobre-fac">
               <li>
                 <Link to="sobre-nos">
                   <Button variant={"secondary"} isActive={false}>
@@ -40,45 +40,21 @@ function Footer() {
                   </Button>
                 </Link>
               </li>
-              <li>
-                <Link to="corpo-clinico">
-                  <Button variant={"secondary"} isActive={false}>
-                    CORPO CLÍNICO
-                  </Button>
-                </Link>
-                <Button variant={"tertiary"} isActive={false}>
-                  Diretora Clínica
-                </Button>
-                <Button variant={"tertiary"} isActive={false}>
-                  Especialistas
-                </Button>
-              </li>
             </div>
-            <div className="espec">
+            <div className="espec-corpo">
               <li>
+                <li>
+                  <Link to="corpo-clinico">
+                    <Button variant={"secondary"} isActive={false}>
+                      CORPO CLÍNICO
+                    </Button>
+                  </Link>
+                </li>
                 <Link to="especialidades">
                   <Button variant={"secondary"} isActive={false}>
                     ESPECIALIDADES
                   </Button>
                 </Link>
-                <Button variant={"tertiary"} isActive={false}>
-                  Prótese Dentária
-                </Button>
-                <Button variant={"tertiary"} isActive={false}>
-                  Ortodontia
-                </Button>
-                <Button variant={"tertiary"} isActive={false}>
-                  Odontologia Infantil
-                </Button>
-                <Button variant={"tertiary"} isActive={false}>
-                  Implantes Dentários
-                </Button>
-                <Button variant={"tertiary"} isActive={false}>
-                  Endodontia
-                </Button>
-                <Button variant={"tertiary"} isActive={false}>
-                  Mais...
-                </Button>
               </li>
             </div>
             <div className="info-perg-cont">
