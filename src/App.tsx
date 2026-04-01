@@ -3,7 +3,6 @@ import Button from "./components/Button/Button";
 import InsideBanner from "./components/InsideBanner/InsideBanner";
 import "./App.css";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
-import InfoFlore from "./components/Info-Flore/InfoFlore";
 
 function App() {
   const POSICAO_CLINICA = { lat: -7.167731, lng: -34.830455 };
@@ -101,8 +100,6 @@ function App() {
           </Map>
         </APIProvider>
       </section>
-
-      <InfoFlore />
     </>
   );
 }
