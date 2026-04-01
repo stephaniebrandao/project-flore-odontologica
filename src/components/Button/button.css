@@ -41,15 +41,3 @@ button {
     border-radius: 8px;
     transition: 400ms;
 }
-
-.tertiary {
-    font-size: 0.7em;
-    display: flex;
-    padding: 0;
-    margin-left: 10px;
-    line-height: 20px;
-}
-
-.tertiary:hover {
-    text-decoration: underline;
-}
