@@ -1,7 +1,7 @@
 import "./navbar.css";
 import Button from "../Button/Button";
 import { Link } from "react-router";
-import logoVerticalFlore from "../Images/Logo Vertical-verde.png"
+import logoVerticalFlore from "../Images/LogoVertical-verde.png"
 
 function NavBar() {
   return (
