@@ -28,7 +28,7 @@
   background-color: rgba(119, 136, 92, 0.2);
   border-radius: 20px;
   overflow: hidden;
-  width: 50%;
+  width: 600px;
   height: 100%;
   margin: 20px auto;
   padding: 20px;
@@ -42,8 +42,8 @@
 
 .specs > .titulos-horas > h3 {
   font-family: "Roboto Slab";
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
-  margin: 0;
+  margin-top: 20px;
   line-height: 1rem;
 }
