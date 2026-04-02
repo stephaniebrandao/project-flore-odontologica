@@ -2,6 +2,7 @@ import MapPin from "../../assets/MapPin";
 import Phone from "../../assets/Phone";
 import Card from "../Card/Card";
 import "./infoFlore.css";
+import entradaFlore from "../Images/flore-entrada.png"
 
 function InfoFlore() {
   const horarios = (
@@ -27,7 +28,7 @@ function InfoFlore() {
           <Card
             image={<img
               className="recepcao-clinica"
-              src="/src/components/Images/flore-entrada.png"
+              src={entradaFlore}
               alt="Recepção da clínica Flore"
               width={150}
               height={150} />}
