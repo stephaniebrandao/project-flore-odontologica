@@ -1,6 +1,7 @@
 import "./navbar.css";
 import Button from "../Button/Button";
 import { Link } from "react-router";
+import logoVertical from "../Images/Logo Vertical - verde - cópia.png"
 
 function NavBar() {
   return (
@@ -27,7 +28,7 @@ function NavBar() {
         <Link to="/">
           <img
             className="image-flore"
-            src="/src/components/Images/Logo Vertical - verde - cópia.png"
+            src={logoVertical}
             alt="Logo Vertical Flore - verde"
             width={150}
             height={150}
