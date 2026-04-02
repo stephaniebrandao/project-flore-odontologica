@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Instagram from "../../assets/Instagram";
 import LinkedIn from "../../assets/LinkedIn";
 import Deezer from "../../assets/Deezer";
-import logoVertical from "../Images/Logo Vertical - verde - cópia.png"
+import logoVertical from "../Images/Logo Vertical-verde.png"
 
 function Footer() {
   let currentYear = new Date().getFullYear();
