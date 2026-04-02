@@ -13,6 +13,7 @@ function MarcarConsulta() {
     mensagem: "",
     especialidade: "",
     horarios: "",
+    data: "",
   });
 
   const handleSubmit = async (e: any) => {
@@ -31,6 +32,7 @@ function MarcarConsulta() {
       mensagem: "",
       especialidade: "",
       horarios: "",
+      data: "",
     });
   };
 
