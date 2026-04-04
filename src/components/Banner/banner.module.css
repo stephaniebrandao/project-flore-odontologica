@@ -9,7 +9,7 @@
     font-family: "Cormorant Garamond";
 }
 
-.banner-Info > p {
+.bannerInfo > p {
     font-family: "Roboto Slab";
     border-radius: 10px;
 }
@@ -21,17 +21,10 @@
   border: 1px solid #3c4a28;
   margin-bottom: 20px;
   padding: 0 300px;
-}
-
-.withBg > .children-container p {
-    text-shadow: 0 0 20px #3c4a28;
+  text-shadow: 0 0 20px #3c4a28;
 }
 
 .withoutBg {
   margin: 0 20%;
   padding: 0 100px;
-}
-
-.withoutBg > .children-container p {
-    text-shadow: none;
 }
