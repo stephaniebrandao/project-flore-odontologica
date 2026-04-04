@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import "./footer.css";
+import styles from "./footer.module.css";
 import Button from "../Button/Button";
 import Instagram from "../../assets/Instagram";
 import LinkedIn from "../../assets/LinkedIn";
@@ -11,22 +11,22 @@ function Footer() {
 
   return (
     <footer>
-      <div className="flore-footer">
-        <section className="image-span">
+      <div className={styles.floreFooter}>
+        <section className={styles.imageSpan}>
           <Link to="/">
             <img
-              className="image-footer"
+              className={styles.imageFooter}
               src={logoVertical}
               alt="Logo Vertical Flore - verde"
               width={110}
               height={110}
             />
           </Link>
-          <span className="flore-florescer">Venha florescer conosco!</span>
+          <span className={styles.floreFlorescer}>Venha florescer conosco!</span>
         </section>
         <nav>
-          <ul className="ul-footer">
-            <div className="sobre-fac">
+          <ul className={styles.ulFooter}>
+            <div className={styles.sobreFac}>
               <li>
                 <Link to="sobre-nos">
                   <Button variant={"secondary"} isActive={false}>
@@ -42,7 +42,7 @@ function Footer() {
                 </Link>
               </li>
             </div>
-            <div className="espec-corpo">
+            <div className={styles.especCorpo}>
               <li>
                 <li>
                   <Link to="corpo-clinico">
@@ -58,7 +58,7 @@ function Footer() {
                 </Link>
               </li>
             </div>
-            <div className="info-perg-cont">
+            <div className={styles.infoContatos}>
               <li>
                 <Link to="informacoes">
                   <Button variant={"secondary"} isActive={false}>
@@ -102,7 +102,7 @@ function Footer() {
         </Link>
       </figure>
 
-      <span className="direitos-flore">
+      <span className={styles.direitosFlore}>
         © {currentYear} Flore Odontológica. Todos os direitos reservados.
       </span>
     </footer>

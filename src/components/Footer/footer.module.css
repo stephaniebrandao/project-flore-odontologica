@@ -1,30 +1,30 @@
-.flore-footer {
+.floreFooter {
   background-color: rgba(119, 136, 92, 0.2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.image-span{
+.imageSpan{
   display: grid;
   grid-template-rows: 15px 100px 30px;
   justify-content: center;
   align-items: center;
 }
 
-.image-span > a {
+.imageSpan > a {
     display: grid;
     grid-row: 2 / 3;
     justify-self: center;
     margin-bottom: 20px;
 }
 
-.image-footer {
+.imageFooter {
     margin-top: 10px;
     border-radius: 50%;
     background-color: rgba(246, 246, 239, 0.8);
 }
 
-.flore-florescer {
+.floreFlorescer {
     display: grid;
     justify-content: center;
     grid-row: 3 / 4;
@@ -32,25 +32,25 @@
     font-family: 'Cormorant Garamond';
 }
 
-.ul-footer {
+.ulFooter {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
 }
 
-.sobre-fac {
+.sobreFac {
     justify-items: start;
 }
 
-.espec-corpo {
+.especCorpo {
     justify-items: start;
 }
 
-.info-perg-cont {
+.infoContatos {
     justify-items: start;
 }
 
-.direitos-flore {
+.direitosFlore {
     display: flex;
     justify-content: center;
     text-align: center;
