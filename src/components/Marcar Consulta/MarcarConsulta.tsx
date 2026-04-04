@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Button from "../Button/Button";
-import "./marcarConsulta.css";
+import styles from "./marcarConsulta.module.css";
 import { supabase } from "../../supabaseClient";
 import type { Horarios, IEspecialidades } from "../../types";
 import Header from "../Header/Header";
@@ -93,12 +93,12 @@ function MarcarConsulta() {
     <Header title={"Marque aqui a sua consulta!"} subtitle={subtitle} variant={"first"} />
 
       <section>
-        <div className="secao-marcacao">
+        <div className={styles.secaoMarcacao}>
           <form onSubmit={handleButtonSubmit} action="#" method="post">
             <label htmlFor="name">Nome:</label>
             <input
               type="text"
-              placeholder="Ana Silva"
+              placeholder="Preencha com o seu nome completo"
               onChange={(e) =>
                 setNewMarcacao((prev) => ({ ...prev, nome: e.target.value }))
               }
@@ -107,7 +107,7 @@ function MarcarConsulta() {
             <label htmlFor="email">E-mail:</label>
             <input
               type="email"
-              placeholder="seu@email.com"
+              placeholder="Preencha com o seu e-mail"
               onChange={(e) =>
                 setNewMarcacao((prev) => ({ ...prev, email: e.target.value }))
               }
@@ -116,7 +116,7 @@ function MarcarConsulta() {
             <label htmlFor="telefone">Telefone:</label>
             <input
               type="tel"
-              placeholder="83 99000-9000"
+              placeholder="Preencha com o seu contato telefônico"
               onChange={(e) =>
                 setNewMarcacao((prev) => ({
                   ...prev,
@@ -179,7 +179,7 @@ function MarcarConsulta() {
                 }))
               }
             />
-            <div className="btn-form">
+            <div className={styles.btnForm}>
               <Button variant={"nav"} isActive={true} isDisabled={isSubmitting}>
                 Enviar
               </Button>

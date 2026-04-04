@@ -1,4 +1,4 @@
-.secao-marcacao {
+.secaoMarcacao {
     display: flex;
     margin: 30px 400px;
     padding: 30px;
@@ -7,7 +7,7 @@
     background-color: rgba(119, 136, 92, 0.2);
 }
 
-.secao-marcacao > form {
+.secaoMarcacao > form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -16,19 +16,19 @@
     gap: 10px;
 }
 
-.secao-marcacao > form > input {
+.secaoMarcacao > form > input {
     height: 24px;
 }
 
-.secao-marcacao > form > select {
+.secaoMarcacao > form > select {
     height: 30px;
 }
 
-.secao-marcacao > form > textarea {
+.secaoMarcacao > form > textarea {
     min-height: 100px;
 }
 
-.btn-form {
+.btnForm {
     display: flex;
     justify-content: center;
     margin-top: 25px;
