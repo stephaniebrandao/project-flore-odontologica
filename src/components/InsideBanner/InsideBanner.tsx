@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import "./insideBanner.css"
+import styles from "./insideBanner.module.css"
 
 interface IInsideBanner {
   title: string;
@@ -9,7 +9,7 @@ interface IInsideBanner {
 function InsideBanner({ title, info }: IInsideBanner) {
   return (
     <>
-      <section className="children-container">
+      <section className={styles.childrenContainer}>
         <h2>{title}</h2>
         <p>{info}</p>
       </section>

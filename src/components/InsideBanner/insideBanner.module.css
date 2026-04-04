@@ -1,17 +1,16 @@
-.children-container {
+.childrenContainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  grid-column: 2 / 3;
 }
 
-.children-container > h2 {
+.childrenContainer > h2 {
     font-family: "Cormorant Garamond";
 }
 
-.children-container > p {
+.childrenContainer > p {
     font-family: "Roboto Slab";
     border-radius: 10px;
 }
