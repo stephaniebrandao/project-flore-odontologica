@@ -13,3 +13,10 @@ export type Horarios = {
     create_at: string,
     hora: string,
 }
+
+export interface ICorpoClinico {
+    nome: string,
+    especialidade: string,
+    slug: string,
+    imagens: string,
+}
