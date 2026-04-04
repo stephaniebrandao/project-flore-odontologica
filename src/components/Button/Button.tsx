@@ -1,5 +1,5 @@
 import { type ReactNode } from "react";
-import "./button.css"
+import styles from "./button.module.css"
 
 interface BtnCharacteristics {
     variant: 'nav' | 'primary' | 'secondary',
@@ -12,7 +12,7 @@ interface BtnCharacteristics {
   function Button ({variant, isActive, isDisabled, children}: BtnCharacteristics) {
       return (
         <>
-          <button className={`${variant} ${isActive} ${isDisabled}`}>{children}</button>
+          <button className={`${styles[variant]} ${isActive} ${isDisabled}`}>{children}</button>
         </>
       )
   }
