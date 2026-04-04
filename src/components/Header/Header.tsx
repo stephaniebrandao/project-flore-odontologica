@@ -1,4 +1,4 @@
-import "./header.css";
+import styles from "./header.module.css";
 
 interface IHeader {
   title: string;
@@ -9,7 +9,7 @@ interface IHeader {
 function Header({ title, subtitle, variant }: IHeader) {
   return (
     <>
-      <div className={`${variant}`}>
+      <div className={styles[variant]}>
         <h1>{title}</h1>
         <p>{subtitle}</p>
       </div>
