@@ -1,25 +1,25 @@
 import type { ReactNode } from "react";
-import "./card.css";
+import styles from "./card.module.css";
 
 interface ICard {
   title: string | string[];
   subtitle: string | string[];
   info?: ReactNode | string[];
   image?: string | string[] | ReactNode;
-  variant: "normal" | "specs";
+  variant: "normal" | "specs" | "cclinico";
 }
 
 function Card({ title, subtitle, info, image, variant }: ICard) {
   return (
     <>
-      <section className={`${variant}`}>
+      <section className={styles[variant]}>
         <div>
           <figure>{image}</figure>
         </div>
-        <div className="titulos-horas">
+        <div className={styles.titulosHoras}>
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
-          <div className="info-horarios">{info}</div>
+          <div className={styles.infoHorarios}>{info}</div>
         </div>
       </section>
     </>
