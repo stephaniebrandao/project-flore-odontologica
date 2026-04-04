@@ -1,7 +1,6 @@
 import info from "../../data";
 import Accordion from "../Accordion/Accordion";
 import Header from "../Header/Header";
-import "./informacoesImportantes.css";
 
 function InformacoesImportantes() {
   const subtitle =
