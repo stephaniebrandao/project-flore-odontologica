@@ -1,4 +1,4 @@
-.convenios-particular {
+.conveniosParticular {
   display: flex;
   flex-direction: column;
   max-width: 500px;
@@ -8,27 +8,27 @@
   padding: 20px 30px 20px 50px;
 }
 
-.convenios-particular > li {
+.conveniosParticular > li {
   font-family: "Cormorant Garamond";
   font-weight: 500;
   font-size: 20px;
   margin-top: 10px;
 }
 
-.convenios-particular > p {
+.conveniosParticular > p {
   font-family: "Roboto Slab";
   font-size: 14px;
   margin: 10px 0;
 }
 
-.convenios-particular > ul > li {
+.conveniosParticular > ul > li {
   font-family: "Roboto Slab";
   font-size: 14px;
   font-weight: 500;
   margin: 10px 0;
 }
 
-.convenios-particular > .pagamentos {
+.conveniosParticular > .pagamentos {
     text-align: center;
     margin-top: 60px;
 }

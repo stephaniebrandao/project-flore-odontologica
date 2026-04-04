@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./facilidades.css";
+import styles from "./facilidades.module.css";
 import { supabase } from "../../supabaseClient";
 import Header from "../Header/Header";
 
@@ -23,7 +23,7 @@ function Facilidades() {
 
     <Header title={"Facilidades e Convênios"} subtitle={subtitle} variant={"first"}/>
 
-        <ol className="convenios-particular">
+        <ol className={styles.conveniosParticular}>
           <li>Planos de Saúde (Convênios)</li>
           <p>
             Trabalhamos com uma ampla rede credenciada para garantir que você
@@ -36,7 +36,7 @@ function Facilidades() {
             ))}
           </ul>
           <li>Atendimento Particular</li>
-          <p className="pagamentos">
+          <p className={styles.pagamentos}>
             Aceitamos cartões de crédito (parcelamento disponível), débito, PIX
             e numerário.
           </p>
