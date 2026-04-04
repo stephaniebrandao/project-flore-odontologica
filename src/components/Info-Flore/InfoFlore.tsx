@@ -1,8 +1,8 @@
 import MapPin from "../../assets/MapPin";
 import Phone from "../../assets/Phone";
 import Card from "../Card/Card";
-import "./infoFlore.css";
-import entradaFlore from "../Images/flore-entrada.png"
+import styles from "./infoFlore.module.css";
+import entradaFlore from "../Images/flore-entrada.png";
 
 function InfoFlore() {
   const horarios = (
@@ -24,20 +24,25 @@ function InfoFlore() {
   return (
     <>
       <article>
-        <div className="container-info">
+        <div>
           <Card
-            image={<img
-              className="recepcao-clinica"
-              src={entradaFlore}
-              alt="Recepção da clínica Flore"
-              width={150}
-              height={150} />}
+            image={
+              <img
+                className={styles.recepcaoClinica}
+                src={entradaFlore}
+                alt="Recepção da clínica Flore"
+                width={150}
+                height={150}
+              />
+            }
             title={"Flore Odontológica"}
             subtitle={"Mangabeira VII"}
-            info={horarios} variant={"normal"}          />
+            info={horarios}
+            variant={"normal"}
+          />
         </div>
 
-        <div className="container-endereco">
+        <div className={styles.containerEndereco}>
           <span>
             R. Des. Júlio Rique Filho, 12 - Mangabeira VII, João Pessoa - PB,
             58058-236, Brasil

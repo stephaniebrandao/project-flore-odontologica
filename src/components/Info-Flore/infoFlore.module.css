@@ -1,0 +1,30 @@
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.recepcaoClinica {
+  border-radius: 50%;
+}
+
+.containerEndereco {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Slab";
+}
+
+.containerEndereco > p {
+  font-size: 12px;
+}
+
+.containerEndereco > a > p {
+  font-size: 12px;
+}
+
+a {
+  color: #29331b;
+  text-decoration: none;
+}
