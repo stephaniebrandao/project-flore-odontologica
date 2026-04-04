@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../supabaseClient";
-import "./especialidades.css";
+import styles from "./especialidades.module.css";
 import type { IEspecialidades } from "../../types";
 import Card from "../Card/Card";
 import Header from "../Header/Header";
@@ -32,11 +32,11 @@ function Especialidades() {
         subtitle={subtitle}
         variant={"first"}
       />
-      <div className="title-specs">
+      <div className={styles.titleSpecs}>
         <p>Estamos prontos para cuidar de si!</p>
         <aside>Venha florescer conosco!</aside>
       </div>
-      <div className="especialidades-api">
+      <div>
         {especialidades.map((especialidade) => (
           <Card
             image={
