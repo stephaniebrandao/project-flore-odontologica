@@ -1,4 +1,3 @@
-import "./accordion.css"
 import AccordionItem from "./AccordionItem";
 
 export interface IAccordion {

@@ -1,4 +1,4 @@
-import "./accordion.css";
+import styles from "./accordion.module.css";
 import { useState, type ReactNode } from "react";
 
 interface AccordionItemProps {
@@ -15,13 +15,13 @@ function AccordionItem({ title, children }: AccordionItemProps) {
 
   return (
     <>
-      <div className="container">
-        <div className={`header ${isOpen ? "open" : ""}`} onClick={handleToggle}>
-          <div className="title">
+      <div className={styles.container}>
+        <div className={`${styles.header} ${isOpen ? styles.open : ""}`} onClick={handleToggle}>
+          <div className={styles.title}>
             <h2>{title}</h2>
-            <p className="icon">{isOpen ? "-" : "+"}</p>
+            <p className={styles.icon}>{isOpen ? "-" : "+"}</p>
           </div>
-          {isOpen && <div className="content">{children}</div>}
+          {isOpen && <div className={styles.content}>{children}</div>}
         </div>
       </div>
     </>
