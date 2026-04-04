@@ -1,5 +1,5 @@
 import InsideBanner from "../InsideBanner/InsideBanner";
-import "./sobreNos.css";
+import styles from "./sobreNos.module.css";
 
 function SobreNos() {
   const missao =
@@ -10,7 +10,7 @@ function SobreNos() {
 
   return (
     <>
-      <article className="quem-somos">
+      <article className={styles.quemSomos}>
         <h1>Quem somos</h1>
         <p>
           A Flore Odontológica nasceu do desejo de transformar a ida ao dentista
@@ -30,7 +30,7 @@ function SobreNos() {
         </p>
       </article>
 
-      <section className="missao-visao-valores">
+      <section className={styles.missaoVisaoValores}>
         <InsideBanner title={"Missão:"} info={missao} />
 
         <InsideBanner title={"Visão:"} info={visao} />

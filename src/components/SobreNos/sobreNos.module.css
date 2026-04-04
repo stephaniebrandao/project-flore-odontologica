@@ -1,19 +1,19 @@
-.quem-somos {
+.quemSomos {
     display: flex;
     flex-direction: column;
     max-width: 800px;
     text-align: center;
 }
 
-.quem-somos > h1 {
+.quemSomos > h1 {
     font-family: "Cormorant Garamond"
 }
 
-.quem-somos > p {
+.quemSomos > p {
     font-family: "Roboto Slab";
 }
 
-.missao-visao-valores {
+.missaoVisaoValores {
     display: flex;
     flex-direction: column;
     max-width: 800px;
@@ -24,7 +24,7 @@
     border-radius: 10px;
 }
 
-.missao-visao-valores > .children-container > p {
+.missaoVisao-Valores > .childrenContainer > p {
     max-width: 800px;
     margin: auto;
 }
