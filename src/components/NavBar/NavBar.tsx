@@ -1,4 +1,4 @@
-import "./navbar.css";
+import styles from "./navbar.module.css";
 import Button from "../Button/Button";
 import { Link } from "react-router";
 import logoVerticalFlore from "../Images/LogoVertical-verde.png"
@@ -6,7 +6,7 @@ import logoVerticalFlore from "../Images/LogoVertical-verde.png"
 function NavBar() {
   return (
     <header>
-      <nav className="nav-sup" aria-label="Navegação Superior">
+      <nav className={styles.navSup} aria-label="Navegação Superior">
         <ul>
           <li>
             <Link to="consulta">
@@ -24,10 +24,10 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-      <div className="gradient-bar">
+      <div className={styles.gradientBar}>
         <Link to="/">
           <img
-            className="image-flore"
+            className={styles.imageFlore}
             src={logoVerticalFlore}
             alt="Logo Vertical Flore - verde"
             width={150}
@@ -35,7 +35,7 @@ function NavBar() {
           />
         </Link>
       </div>
-      <nav className="nav-principal" aria-label="Navegação Principal">
+      <nav className={styles.navPrincipal} aria-label="Navegação Principal">
         <ul>
           <li>
             <Link to="sobre-nos">

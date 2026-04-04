@@ -2,7 +2,7 @@ ul {
   list-style-type: none;
 }
 
-.gradient-bar {
+.gradientBar {
   background: linear-gradient(
     to right,
     #bdc8ac 0%,
@@ -15,13 +15,13 @@ ul {
   justify-content: center;
 }
 
-.image-flore {
+.imageFlore {
   display: flex;
   justify-self: center;
   background-color: rgba(246, 246, 239, 0);
 }
 
-.nav-sup ul {
+.navSup ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,14 +29,14 @@ ul {
   width: 100%;
 }
 
-.nav-sup li {
+.navSup li {
   display: flex;
   align-items: center;
   gap: 4px;
   margin: 0 10px;
 }
 
-.nav-principal ul {
+.navPrincipal ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
