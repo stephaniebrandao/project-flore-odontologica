@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import "./banner.css"
+import styles from "./banner.module.css"
 
 interface IBanner {
     variant: "withBg" | "withoutBg"
@@ -8,7 +8,7 @@ interface IBanner {
 
 function Banner ({children, variant}: IBanner) {
     return (
-        <div className={`${variant} ${"banner-info"}`}>
+        <div className={`${styles[variant]} ${styles.bannerInfo}`}>
             {children}
         </div>
     )

@@ -1,15 +1,15 @@
-.banner-info {
+.bannerInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.banner-info > h2 {
+.bannerInfo > h2 {
     font-family: "Cormorant Garamond";
 }
 
-.banner-info > p {
+.banner-Info > p {
     font-family: "Roboto Slab";
     border-radius: 10px;
 }
