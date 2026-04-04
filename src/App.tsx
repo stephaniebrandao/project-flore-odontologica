@@ -1,7 +1,7 @@
 import Banner from "./components/Banner/Banner";
 import Button from "./components/Button/Button";
 import InsideBanner from "./components/InsideBanner/InsideBanner";
-import "./App.css";
+import styles from "./App.module.css";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 import { Link } from "react-router";
 import Kalygia from "./components/Images/photo_kalygia.jpg"
@@ -27,17 +27,17 @@ function App() {
   );
   return (
     <>
-      <section className="container-index-flore">
+      <section className={styles.containerIndexFlore}>
         <div>
           <img
-            className="kalygia-flore-img"
+            className={styles.kalygiaFloreImg}
             src={Kalygia}
             alt="Dra. Kalygia Cavalcanti - diretora clínica"
             width={205}
             height={300}
           />
         </div>
-        <div className="intro-flore">
+        <div className={styles.introFlore}>
           <h1>Sua jornada para um sorriso radiante começa aqui!</h1>
           <p>
             Na Flore Odontológica, acreditamos que cada sorriso carrega uma
@@ -61,12 +61,12 @@ function App() {
         </div>
       </section>
 
-      <div className="container-consulta">
+      <div className={styles.containerConsulta}>
         <p>ONLINE OU POR TELEFONE</p>
         <h1>MARQUE JÁ A SUA CONSULTA</h1>
       </div>
 
-      <div className="consulta-flore">
+      <div className={styles.consultaFlore}>
         <Link to={"consulta"}>
           <Button variant={"nav"} isActive={false}>
             Marque aqui!
@@ -90,10 +90,10 @@ function App() {
         <InsideBanner title={"A nossa clínica"} info={nossaClinica} />
       </Banner>
 
-      <section className="container-mapa">
+      <section className={styles.containerMapa}>
         <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
           <Map
-            className="mapa"
+            className={styles.mapa}
             defaultCenter={POSICAO_CLINICA}
             defaultZoom={16}
             gestureHandling="cooperative"

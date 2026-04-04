@@ -1,4 +1,4 @@
-.container-index-flore {
+.containerIndexFlore {
   display: flex;
   align-items: center;
   max-width: 70%;
@@ -6,29 +6,29 @@
   justify-content: center;
 }
 
-.kalygia-flore-img {
+.kalygiaFloreImg {
   box-shadow: 0px 0px 20px #3c4a2880;
   border-radius: 50%;
 }
 
-.intro-flore {
+.introFlore {
   text-align: center;
   color: #3c4a28;
   margin: 0 60px;
 }
 
-.intro-flore h1 {
+.introFlore h1 {
   margin: 30px 0;
   font-family: "Cormorant Garamond";
   font-size: 24px;
 }
 
-.intro-flore p {
+.introFlore p {
   font-family: "Roboto Slab";
   font-size: 14px;
 }
 
-.intro-flore aside {
+.introFlore aside {
   font-family: "Cormorant Garamond";
   font-size: 24px;
   background-color: #bdc8ac80;
@@ -36,7 +36,7 @@
   margin-top: 30px;
 }
 
-.container-consulta {
+.containerConsulta {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,18 +45,18 @@
   color: #3c4a28;
 }
 
-.container-consulta p {
+.containerConsulta p {
   font-family: "Roboto Slab";
   font-size: 14px;
   margin: 5px;
 }
 
-.container-consulta h1 {
+.containerConsulta h1 {
   font-family: "Cormorant Garamond";
   margin: 10px;
 }
 
-.container-consulta h1::before {
+.containerConsulta h1::before {
   content: "";
   width: 58px;
   height: 2px;
@@ -68,14 +68,14 @@
   background-color: #3c4a28;
 }
 
-.consulta-flore {
+.consultaFlore {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px 0;
 }
 
-.container-mapa {
+.containerMapa {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +83,7 @@
   border-radius: 10px;
 }
 
-.container-mapa h2 {
+.containerMapa h2 {
   font-family: "Cormorant Garamond";
   font-size: 28px;
   color: #3c4a28;
