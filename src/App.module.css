@@ -56,7 +56,7 @@
   margin: 10px;
 }
 
-.containerConsulta h1::before {
+/* .containerConsulta h1::before {
   content: "";
   width: 58px;
   height: 2px;
@@ -66,7 +66,7 @@
   bottom: -90px;
   margin: auto;
   background-color: #3c4a28;
-}
+} */
 
 .consultaFlore {
   display: flex;
@@ -140,10 +140,10 @@
     text-align: center;
   }
 
-  .containerConsulta h1::before {
+  /* .containerConsulta h1::before {
     bottom: -875px; 
     width: 40px;
-  }
+  } */
 
   .consultaFlore {
     flex-direction: column;
