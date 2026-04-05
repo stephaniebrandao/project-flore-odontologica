@@ -8,3 +8,19 @@
     width: 900px;
     margin: 60px auto;
 }
+
+/* Media Query */
+
+@media (max-width: 430px) {
+    .corpoClinicoGrid {
+      width: 100%;
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-auto-flow: row;
+      gap: 40px;
+      margin: 30px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  }

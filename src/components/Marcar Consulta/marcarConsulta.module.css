@@ -33,3 +33,40 @@
     justify-content: center;
     margin-top: 25px;
 }
+
+/* Media Query */
+
+@media (max-width: 430px) {
+    .secaoMarcacao {
+        margin: 20px 10px; 
+        padding: 20px 15px; 
+        flex-direction: column; 
+    }
+
+    .secaoMarcacao > form {
+        width: 100%; 
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .secaoMarcacao > form > input,
+    .secaoMarcacao > form > select {
+        height: 45px; 
+        font-size: 16px;
+    }
+
+    .secaoMarcacao > form > textarea {
+        min-height: 120px;
+    }
+
+    .btnForm {
+        margin-top: 20px;
+    }
+
+    .btnForm button {
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+    }
+}

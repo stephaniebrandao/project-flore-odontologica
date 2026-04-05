@@ -26,3 +26,32 @@ body {
 ul {
   padding-inline-start: 0;
 }
+
+/* Media Query */
+
+@media (max-width: 430px) {
+  :root {
+    line-height: 1.4;
+  }
+
+  body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p, h1, h2, h3 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}

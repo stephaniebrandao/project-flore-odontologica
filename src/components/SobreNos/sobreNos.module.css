@@ -28,3 +28,30 @@
     max-width: 800px;
     margin: auto;
 }
+
+/* Media Query */
+
+@media (max-width: 430px) {
+    .quemSomos {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .quemSomos > h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .missaoVisaoValores {
+        width: 80%;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .missaoVisaoValores > .childrenContainer > p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        text-align: left;
+    }
+}

@@ -20,11 +20,48 @@
   background-blend-mode: lighten;
   border: 1px solid #3c4a28;
   margin-bottom: 20px;
-  padding: 0 300px;
+  padding: 10px 300px;
   text-shadow: 0 0 20px #3c4a28;
 }
 
 .withoutBg {
   margin: 0 20%;
   padding: 0 100px;
+}
+
+/* Media Query */
+
+@media (max-width: 430px) {
+  .bannerInfo {
+    width: 100%;
+    padding: 0 15px; 
+    box-sizing: border-box;
+  }
+
+  .bannerInfo > h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .bannerInfo > p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 10px;
+  }
+
+  .withBg {
+    padding: 20px; 
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 10px rgba(60, 74, 40, 0.5);
+  }
+
+  .withoutBg {
+    margin: 20px 0;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }

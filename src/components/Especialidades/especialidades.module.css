@@ -16,3 +16,26 @@
     font-weight: 500;
     margin-top: 30px;
 }
+
+/* Media Query */
+
+@media (max-width: 430px) {
+  .titleSpecs {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .titleSpecs > p {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .titleSpecs > aside {
+    font-size: 18px; 
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}

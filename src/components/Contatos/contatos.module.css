@@ -14,3 +14,44 @@
     border-radius: 10px;
     display: flex;
 }
+
+/* Media Query */
+
+/* --- Seu CSS Original permanece acima --- */
+
+@media (max-width: 430px) {
+    .whatsapp {
+      margin: 30px 0;
+      padding: 0 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .whatsapp > h3 {
+      font-size: 1.4rem;
+      text-align: center;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+  
+    .whatsapp > p {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .whatsapp > p > a {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+      padding: 15px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    
+    .whatsapp > p > a:active {
+      transform: scale(0.95);
+    }
+  }

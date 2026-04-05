@@ -8,6 +8,18 @@ button {
     margin-bottom: 2px;
 }
 
+.consulta {
+    background-color: #3C4A28;
+    color: white;
+    border-radius: 8px;
+}
+
+.consulta:hover {
+    color: white;
+    background-color: rgb(119, 136, 92);
+    border-radius: 8px;
+}
+
 .nav {
     color: #3C4A28;
 }
@@ -40,4 +52,49 @@ button {
     color:#3C4A28;
     border-radius: 8px;
     transition: 400ms;
+}
+
+/* Media Query */
+
+@media (max-width: 430px) {
+    button {
+        width: 100%; 
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+        margin: 5px 0;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .consulta {
+        box-shadow: 0 4px 10px rgba(60, 74, 40, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .consulta:active {
+        background-color: rgb(119, 136, 92);
+        transform: scale(0.98);
+      }
+
+    .nav, .primary, .secondary {
+        border: 1px solid rgba(60, 74, 40, 0.1);
+        border-radius: 8px;
+        transition: background-color 0.2s;
+    }
+
+    .nav:active, .primary:active, .consulta:active {
+        background-color: #3C4A28;
+        color: white;
+    }
+
+    .secondary:active {
+        background-color: rgba(246, 246, 239);
+        color: #3C4A28;
+    }
+    
+    .nav, .primary, .secondary, .consulta {
+        transition: 150ms;
+      }
 }
