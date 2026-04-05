@@ -9,11 +9,18 @@ import logoVertical from "../Images/LogoVertical-verde.png"
 function Footer() {
   let currentYear = new Date().getFullYear();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer>
       <div className={styles.floreFooter}>
         <section className={styles.imageSpan}>
-          <Link to="/">
+          <Link to="/" onClick={scrollToTop}>
             <img
               className={styles.imageFooter}
               src={logoVertical}
@@ -28,14 +35,14 @@ function Footer() {
           <ul className={styles.ulFooter}>
             <div className={styles.sobreFac}>
               <li>
-                <Link to="sobre-nos">
+                <Link to="sobre-nos" onClick={scrollToTop}>
                   <Button variant={"secondary"} isActive={false}>
                     SOBRE NÓS
                   </Button>
                 </Link>
               </li>
               <li>
-                <Link to="facilidades">
+                <Link to="facilidades" onClick={scrollToTop}>
                   <Button variant={"secondary"} isActive={false}>
                     FACILIDADES
                   </Button>
@@ -45,13 +52,13 @@ function Footer() {
             <div className={styles.especCorpo}>
               <li>
                 <li>
-                  <Link to="corpo-clinico">
+                  <Link to="corpo-clinico" onClick={scrollToTop}>
                     <Button variant={"secondary"} isActive={false}>
                       CORPO CLÍNICO
                     </Button>
                   </Link>
                 </li>
-                <Link to="especialidades">
+                <Link to="especialidades" onClick={scrollToTop}>
                   <Button variant={"secondary"} isActive={false}>
                     ESPECIALIDADES
                   </Button>
@@ -60,14 +67,14 @@ function Footer() {
             </div>
             <div className={styles.infoContatos}>
               <li>
-                <Link to="informacoes">
+                <Link to="informacoes" onClick={scrollToTop}>
                   <Button variant={"secondary"} isActive={false}>
                     INFORMAÇÕES IMPORTANTES
                   </Button>
                 </Link>
               </li>
               <li>
-                <Link to="contatos">
+                <Link to="contatos" onClick={scrollToTop}>
                   <Button variant={"secondary"} isActive={false}>
                     CONTATOS
                   </Button>
