@@ -68,7 +68,7 @@ function App() {
 
       <div className={styles.consultaFlore}>
         <Link to={"consulta"}>
-          <Button variant={"nav"} isActive={false}>
+          <Button variant={"consulta"} isActive={false}>
             Marque aqui!
           </Button>
         </Link>
@@ -80,7 +80,7 @@ function App() {
           info={nossosDentistas}
         />
         <Link to={"corpo-clinico"}>
-        <Button variant={"nav"} isActive={false}>
+        <Button variant={"consulta"} isActive={false}>
           Saiba mais!
         </Button>
         </Link>
