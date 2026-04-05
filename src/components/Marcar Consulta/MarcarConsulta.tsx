@@ -9,7 +9,7 @@ function MarcarConsulta() {
   const [newMarcacao, setNewMarcacao] = useState({
     nome: "",
     email: "",
-    telefone: 0,
+    telefone: "",
     mensagem: "",
     especialidade: "",
     horarios: "",
@@ -28,7 +28,7 @@ function MarcarConsulta() {
     setNewMarcacao({
       nome: "",
       email: "",
-      telefone: 0,
+      telefone: "",
       mensagem: "",
       especialidade: "",
       horarios: "",
@@ -48,10 +48,26 @@ function MarcarConsulta() {
     try {
       await handleSubmit(e);
       alert("Consulta marcada!");
+      resetForm();
+      setIsSubmitting(false);
     } catch (error) {
       alert("Tente novamente!");
       setIsSubmitting(false);
     }
+  };
+
+  const initialState = {
+    nome: "",
+    email: "",
+    telefone: "",
+    mensagem: "",
+    especialidade: "",
+    horarios: "",
+    data: "",
+  };
+
+  const resetForm = () => {
+    setNewMarcacao(initialState);
   };
 
   // -----------------
@@ -85,12 +101,16 @@ function MarcarConsulta() {
     fetchHorarios();
   }, []);
 
-  const subtitle = "Marque aqui a sua consulta na Flore Odontológica. A sua marcação será confirmada por e-mail e/ou mensagem."
+  const subtitle =
+    "Marque aqui a sua consulta na Flore Odontológica. A sua marcação será confirmada por e-mail e/ou mensagem.";
 
   return (
     <>
-
-    <Header title={"Marque aqui a sua consulta!"} subtitle={subtitle} variant={"first"} />
+      <Header
+        title={"Marque aqui a sua consulta!"}
+        subtitle={subtitle}
+        variant={"first"}
+      />
 
       <section>
         <div className={styles.secaoMarcacao}>
@@ -99,6 +119,7 @@ function MarcarConsulta() {
             <input
               type="text"
               placeholder="Preencha com o seu nome completo"
+              value={newMarcacao.nome}
               onChange={(e) =>
                 setNewMarcacao((prev) => ({ ...prev, nome: e.target.value }))
               }
@@ -108,6 +129,7 @@ function MarcarConsulta() {
             <input
               type="email"
               placeholder="Preencha com o seu e-mail"
+              value={newMarcacao.email}
               onChange={(e) =>
                 setNewMarcacao((prev) => ({ ...prev, email: e.target.value }))
               }
@@ -117,10 +139,11 @@ function MarcarConsulta() {
             <input
               type="tel"
               placeholder="(xx) xxxxx-xxxx"
+              value={newMarcacao.telefone}
               onChange={(e) =>
                 setNewMarcacao((prev) => ({
                   ...prev,
-                  telefone: Number(e.target.value),
+                  telefone: (e.target.value),
                 }))
               }
               required
@@ -129,6 +152,7 @@ function MarcarConsulta() {
             <select
               name="especialidades"
               id="especialidades"
+              value={newMarcacao.especialidade}
               onChange={(e) =>
                 setNewMarcacao((prev) => ({
                   ...prev,
@@ -145,12 +169,20 @@ function MarcarConsulta() {
               ))}
             </select>
             <label htmlFor="date">Data da consulta:</label>
-            <input type="date" required />
+            <input
+              type="date"
+              value={newMarcacao.data}
+              onChange={(e) =>
+                setNewMarcacao((prev) => ({ ...prev, data: e.target.value }))
+              }
+              required
+            />
 
             <label htmlFor="horarios">Horários:</label>
             <select
               name="horarios"
               id="horarios"
+              value={newMarcacao.horarios}
               onChange={(e) =>
                 setNewMarcacao((prev) => ({
                   ...prev,
@@ -172,6 +204,7 @@ function MarcarConsulta() {
               name="mensagem"
               id=""
               placeholder="Mensagem para a equipe da clínica (opcional): sintomas, dúvidas ou observações..."
+              value={newMarcacao.mensagem}
               onChange={(e) =>
                 setNewMarcacao((prev) => ({
                   ...prev,
