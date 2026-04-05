@@ -116,7 +116,7 @@ function MarcarConsulta() {
             <label htmlFor="telefone">Telefone:</label>
             <input
               type="tel"
-              placeholder="Preencha com o seu contato telefônico"
+              placeholder="(xx) xxxxx-xxxx"
               onChange={(e) =>
                 setNewMarcacao((prev) => ({
                   ...prev,
