@@ -2,7 +2,7 @@ import { type ReactNode } from "react";
 import styles from "./button.module.css"
 
 interface BtnCharacteristics {
-    variant: 'nav' | 'primary' | 'secondary',
+    variant: 'nav' | 'primary' | 'secondary' | "consulta",
     isActive: boolean,
     isDisabled?: boolean
     children: ReactNode
