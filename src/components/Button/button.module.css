@@ -84,7 +84,8 @@ button {
     }
 
     .nav:active, .primary:active, .consulta:active {
-        text-decoration: underline;
+        background-color: #3C4A28;
+        color: white;
         font-weight: 800;
     }
 
