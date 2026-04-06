@@ -79,18 +79,17 @@ button {
       }
 
     .nav, .primary, .secondary {
-        border: 1px solid rgba(60, 74, 40, 0.1);
         border-radius: 8px;
         transition: background-color 0.2s;
     }
 
     .nav:active, .primary:active, .consulta:active {
-        background-color: #3C4A28;
-        color: white;
+        text-decoration: underline;
+        font-weight: 800;
     }
 
     .secondary:active {
-        background-color: rgba(246, 246, 239);
+        background-color: rgb(246, 246, 239);
         color: #3C4A28;
     }
     
