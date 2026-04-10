@@ -2,7 +2,7 @@ import styles from "./header.module.css";
 
 interface IHeader {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   variant: "first";
 }
 
