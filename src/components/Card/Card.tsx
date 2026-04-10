@@ -13,9 +13,7 @@ function Card({ title, subtitle, info, image, variant }: ICard) {
   return (
     <>
       <section className={styles[variant]}>
-        <div>
           <figure>{image}</figure>
-        </div>
         <div className={styles.titulosHoras}>
           <h2>{title}</h2>
           <h3>{subtitle}</h3>
