@@ -22,20 +22,21 @@
 @media (max-width: 430px) {
   .first {
     width: 100%;
-    padding: 0 20px; 
-    margin: 20px auto;
+    padding: 0 20px;
     box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-
+  
   .first > h1 {
-    font-size: 2rem; 
-    line-height: 1.1;
+    font-size: 1.8rem; 
+    line-height: 1.2;
     margin-bottom: 15px;
   }
-
+  
   .first > p {
-    font-size: 15px; 
-    line-height: 1.6;
-    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 5px; 
   }
 }

@@ -38,35 +38,49 @@
 
 @media (max-width: 430px) {
     .secaoMarcacao {
-        margin: 20px 10px; 
-        padding: 20px 15px; 
-        flex-direction: column; 
+      margin: 20px 15px; 
+      padding: 20px 15px;
+      flex-direction: column;
     }
-
+  
     .secaoMarcacao > form {
-        width: 100%; 
-        max-width: 100%;
-        gap: 15px;
+      width: 100%;
+      max-width: 100%; 
+      gap: 15px;
     }
-
-    .secaoMarcacao > form > input,
+  
+    .secaoMarcacao > form > input {
+      height: 45px; 
+      font-size: 16px;
+      padding: 0 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
     .secaoMarcacao > form > select {
-        height: 45px; 
-        font-size: 16px;
+      height: 45px;
+      font-size: 16px;
+      padding: 0 10px;
     }
-
+  
     .secaoMarcacao > form > textarea {
-        min-height: 120px;
+      min-height: 120px;
+      font-size: 16px;
+      padding: 10px;
     }
-
+  
+    .secaoMarcacao > form > label {
+      font-weight: 600;
+      margin-bottom: -5px;
+    }
+  
     .btnForm {
-        margin-top: 20px;
+      margin-top: 15px;
+      width: 100%;
     }
-
-    .btnForm button {
-        width: 100%;
-        padding: 12px;
-        display: flex;
-        justify-content: center;
+  
+    .btnForm > button {
+      width: 100%;
+      height: 50px;
     }
-}
+  }

@@ -60,46 +60,53 @@ figure {
 /* Media Query */
 
 @media (max-width: 430px) {
-    .floreFooter {
-      grid-template-columns: 1fr;
-      padding: 20px 0;
-    }
-  
-    .imageSpan {
-      grid-template-rows: auto auto auto;
-      gap: 10px;
-    }
-  
-    .imageSpan > a {
-      margin-bottom: 10px;
-    }
-  
-    .imageFooter {
-      width: 80px;
-      height: 80px;
-    }
-  
-    .ulFooter {
-      grid-template-columns: 1fr;
-      justify-items: center;
-      text-align: center;
-    }
-  
-    .sobreFac, 
-    .especCorpo, 
-    .infoContatos {
-      justify-items: center;
-    }
-  
-    .direitosFlore {
-      font-size: 0.9em;
-      margin: 20px 10px;
-      padding: 0 10px;
-    }
-  
-    .figures {
-      margin-top: 20px;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+  .floreFooter {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
   }
+
+  .imageSpan {
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+
+  .imageSpan > a {
+    grid-row: auto;
+    margin-bottom: 0;
+  }
+
+  .imageFooter {
+    width: 80px;
+    height: 80px;
+    margin-top: 0;
+  }
+
+  .floreFlorescer {
+    grid-row: auto;
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  .ulFooter {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    justify-items: center;
+  }
+
+  .ulFooter li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  figure {
+    gap: 25px;
+    margin: 30px 0;
+  }
+
+  .direitosFlore {
+    font-size: 0.9em;
+    padding: 0 20px;
+    margin: 20px 0 40px 0;
+  }
+}

@@ -30,28 +30,25 @@ ul {
 /* Media Query */
 
 @media (max-width: 430px) {
-  :root {
-    line-height: 1.4;
+  #root {
+    width: 100vw;
+    overflow-x: hidden;
+    display: block;
   }
 
   body {
-    min-height: 100vh;
-    width: 100vw;
     overflow-x: hidden;
-  }
-
-  #root {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(246, 246, 239, 0.5); 
   }
 
-  * {
-    box-sizing: border-box;
+  :root {
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
   }
 
-  p, h1, h2, h3 {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+  ul {
+    margin-left: 0;
+    list-style-position: inside;
   }
 }

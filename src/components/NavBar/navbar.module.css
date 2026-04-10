@@ -29,56 +29,67 @@ ul {
   margin: 10px 210px;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* Media Query */
 
 @media (max-width: 430px) {
   .gradientBar {
-    background: linear-gradient(
-      to right,
-      #bdc8ac 0%,
-      transparent 0%,
-      transparent 5%,
-      #bdc8ac 100%
-    );
-  }
-
-  .navSup ul {
     flex-direction: column;
-  }
-
-  .navSup li {
-    justify-content: center;
-    border-bottom: 1px solid rgba(189, 200, 172, 0.3);
-    width: 100%;
-  }
-
-  .navSup li:last-child {
-    border-bottom: none;
-  }
-
-  .navPrincipal ul {
-    flex-direction: column;
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navPrincipal li {
-    width: 100%;
-    border-bottom: 1px solid rgba(189, 200, 172, 0.3);
-  }
-
-  .navPrincipal li:last-child {
-    border-bottom: none;
+    align-items: center;
   }
 
   .imageFlore {
+    margin-left: 0;
+    margin-top: 15px;
     width: 100%;
-    margin: 0 auto;
+    justify-content: center;
   }
-  
+
   .imageFlore img {
-    max-width: 100%;
+    max-width: 120px; 
     height: auto;
   }
+
+  .navPrincipal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 0 10px;
+  }
+
+  .navPrincipal ul li {
+    margin: 5px;
+  }
+}
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    margin: 10px auto;
+  }
+
+  .hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #3c4a28;
+    border-radius: 10px;
+  }
+
+  .navPrincipal ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menuAtivo {
+    display: flex !important;
   }

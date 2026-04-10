@@ -96,52 +96,38 @@
 @media (max-width: 430px) {
   .containerIndexFlore {
     flex-direction: column;
-    max-width: 95%;
-    margin: 30px auto;
+    max-width: 95%; 
+    margin: 20px auto;
   }
 
   .kalygiaFloreImg {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
   }
 
   .introFlore {
     margin: 0 10px;
-    width: 90%;
+    text-align: center;
   }
 
   .introFlore h1 {
-    font-size: 22px;
+    font-size: 26px;
     margin: 20px 0;
   }
 
   .introFlore p {
     font-size: 15px;
-    line-height: 1.6;
-  }
-
-  .introFlore aside {
-    font-size: 20px;
-    padding: 15px;
-    margin-top: 20px;
+    line-height: 1.5;
   }
 
   .containerConsulta {
-    width: 100%;
+    padding: 0 15px;
     text-align: center;
   }
 
-  /* .containerConsulta h1::before {
-    bottom: -875px; 
-    width: 40px;
-  } */
-
-  .consultaFlore {
-    flex-direction: column;
-    margin: 20px 0;
-    gap: 15px;
+  .containerConsulta h1 {
+    font-size: 22px;
   }
 
   .containerMapa {
@@ -158,6 +144,11 @@
   .mapa {
     width: 100%;
     height: 250px;
-    max-width: 100%;
+  }
+
+  .consultaFlore {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 }

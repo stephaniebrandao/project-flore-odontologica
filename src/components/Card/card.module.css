@@ -109,59 +109,63 @@
 @media (max-width: 430px) {
   .normal {
     flex-direction: column;
+    margin-left: 0;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
   }
 
   .normal > .titulosHoras > h2 {
     font-size: 26px;
-  }
-
-  .normal > .titulosHoras > h3 {
-    font-size: 20px;
+    margin: 10px 0;
   }
 
   .specs {
+    grid-template-columns: 1fr;
     width: 90%;
     height: auto;
-    flex-direction: column;
-    margin: 15px auto;
-    padding: 15px;
-    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    justify-items: center;
   }
 
-  .specs > .titulosHoras > h2 {
-    font-size: 22px;
+  .specs > figure {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .specs > figure > img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .specs > .titulosHoras {
     text-align: center;
   }
 
   .specs > .titulosHoras > h3 {
-    font-size: 14px;
-    margin-top: 15px;
-    text-align: center;
+    margin-right: 0;
   }
 
   .cclinico {
+    grid-template-columns: 1fr;
     width: 90%;
-    flex-direction: column;
-    padding: 15px;
-    margin: 15px auto;
-    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
+    justify-items: center;
     text-align: center;
   }
 
-  .cclinico > .titulosHoras > h2 {
-    font-size: 22px;
+  .cclinico > figure {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
   }
 
-  .cclinico > .titulosHoras > h3 {
-    font-size: 14px;
-    margin-top: 10px;
-  }
-
-  .infoHorarios {
-    font-size: 13px;
-    line-height: 1.4rem;
-    margin-top: 10px;
+  .cclinico > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

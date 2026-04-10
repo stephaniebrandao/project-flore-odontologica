@@ -36,35 +36,30 @@
 
 @media (max-width: 430px) {
   .conveniosParticular {
-    width: 90%;
+    width: 90%; 
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px; 
     box-sizing: border-box;
   }
 
   .conveniosParticular > li {
-
     font-size: 18px;
-    margin-top: 15px;
-    list-style-position: inside;
+    line-height: 1.3;
   }
 
-  .conveniosParticular > p {
-    font-size: 13px;
+  .conveniosParticular > p,
+  .conveniosParticular > ul > li {
+    font-size: 15px;
     line-height: 1.5;
+  }
+
+  .conveniosParticular > .pagamentos {
+    margin-top: 30px; 
   }
 
   .conveniosParticular > ul {
     padding-left: 20px;
-  }
-
-  .conveniosParticular > ul > li {
-    font-size: 13px;
-    margin: 8px 0;
-  }
-
-  .conveniosParticular > .pagamentos {
-    margin-top: 30px;
-    font-weight: bold;
+    margin-top: 10px;
   }
 }

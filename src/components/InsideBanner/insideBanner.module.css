@@ -20,27 +20,22 @@
 
 /* Media Query */
 
-/* --- Seu CSS Original permanece acima --- */
-
 @media (max-width: 430px) {
   .childrenContainer {
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    align-items: center;
+    padding: 0 15px;
+    gap: 10px;
   }
 
   .childrenContainer > h2 {
     font-size: 1.6rem;
-    margin-bottom: 15px;
     line-height: 1.2;
+    margin-bottom: 15px;
   }
 
   .childrenContainer > p {
     font-size: 15px;
     line-height: 1.6;
+    text-align: left; 
     width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
   }
 }
