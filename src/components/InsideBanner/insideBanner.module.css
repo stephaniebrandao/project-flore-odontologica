@@ -3,16 +3,19 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
+
 }
 
 .childrenContainer > h2 {
     font-family: "Cormorant Garamond";
+    text-align: center;
 }
 
 .childrenContainer > p {
     font-family: "Roboto Slab";
     border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* Media Query */
