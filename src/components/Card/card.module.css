@@ -48,6 +48,8 @@
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgb(119, 136, 92);
   opacity: 0.8;
+  width: 180px;
+  height: 180px;
 }
 
 .specs > .titulosHoras > h2 {
@@ -92,12 +94,13 @@
 
 .cclinico > figure {
   display: flex;
-  
   width: 180px;
   height: 180px;
 }
 
 .cclinico > figure > img {
+  width: 180px;
+  height: 180px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgb(119, 136, 92);
   opacity: 0.8;
