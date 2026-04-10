@@ -5,6 +5,7 @@ import Instagram from "../../assets/Instagram";
 import LinkedIn from "../../assets/LinkedIn";
 import Deezer from "../../assets/Deezer";
 import logoVertical from "../Images/LogoVertical-verde.png";
+import WhatsApp from "../../assets/WhatsApp";
 
 function Footer() {
   let currentYear = new Date().getFullYear();
@@ -108,6 +109,14 @@ function Footer() {
           }
         >
           <Deezer />
+        </Link>
+        <Link
+          target="_blank"
+          to={
+            "https://api.whatsapp.com/send/?phone=5583996152173&text&type=phone_number&app_absent=0"
+          }
+        >
+          <WhatsApp />
         </Link>
       </figure>
 

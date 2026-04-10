@@ -2,8 +2,17 @@ import styles from "./navbar.module.css";
 import Button from "../Button/Button";
 import { Link } from "react-router";
 import logoVerticalFlore from "../Images/LogoVertical-verde.png"
+import { useState } from "react";
+import Menu from "../../assets/Menu";
 
 function NavBar() {
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu)
+  }
+
   return (
     <header>
       <div className={styles.gradientBar}>
@@ -17,8 +26,12 @@ function NavBar() {
           />
         </Link>
       </div>
+
       <nav className={styles.navPrincipal} aria-label="Navegação Principal">
-        <ul>
+        <button className="styles.hamburger" onClick={toggleMenu} aria-label="Abrir menu">
+        <Menu/>
+        </button>
+        <ul className={openMenu ? styles.menuAtivo : ""}>
           <li>
             <Link to="sobre-nos">
               <Button variant={"primary"} isActive={false}>
