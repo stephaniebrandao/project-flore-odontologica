@@ -28,7 +28,7 @@ function CorpoClinico() {
   return (
     <>
       <Header
-        title={"Gente que cuida de gente"}
+        title={"Corpo Clínico"}
         subtitle={subtitle}
         variant={"first"}
       />
@@ -38,7 +38,6 @@ function CorpoClinico() {
           <Card
             image={
               <img
-                style={{ width: "120px", height: "170px", borderRadius: "50%" }}
                 src={profissional.imagens}
               />
             }
