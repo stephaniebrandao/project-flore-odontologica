@@ -29,10 +29,6 @@ ul {
   margin: 10px 210px;
 }
 
-.hamburger {
-  display: none;
-}
-
 /* Media Query */
 
 @media (max-width: 430px) {
@@ -49,7 +45,7 @@ ul {
   }
 
   .imageFlore img {
-    max-width: 120px; 
+    max-width: 120px;
     height: auto;
   }
 
@@ -65,24 +61,20 @@ ul {
   .navPrincipal ul li {
     margin: 5px;
   }
-}
 
   .hamburger {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     background: transparent;
     border: none;
     margin: 10px auto;
   }
 
-  .hamburger span {
+  .hamburger svg {
     width: 30px;
-    height: 3px;
-    background-color: #3c4a28;
-    border-radius: 10px;
+    height: auto;
   }
 
   .navPrincipal ul {
@@ -93,3 +85,10 @@ ul {
   .menuAtivo {
     display: flex !important;
   }
+}
+
+@media (min-width: 450px) {
+  .hamburger {
+    display: none;
+  }
+}

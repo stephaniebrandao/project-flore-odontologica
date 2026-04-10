@@ -28,7 +28,7 @@ function NavBar() {
       </div>
 
       <nav className={styles.navPrincipal} aria-label="Navegação Principal">
-        <button className="styles.hamburger" onClick={toggleMenu} aria-label="Abrir menu">
+        <button className={styles.hamburger} onClick={toggleMenu} aria-label="Abrir menu">
         <Menu/>
         </button>
         <ul className={openMenu ? styles.menuAtivo : ""}>
