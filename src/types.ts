@@ -15,6 +15,7 @@ export type Horarios = {
 }
 
 export interface ICorpoClinico {
+    id: number,
     nome: string,
     especialidade: string,
     slug: string,
