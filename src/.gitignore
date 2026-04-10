@@ -1,4 +1,5 @@
 .env
+supabaseClient.tsx
 
 # Logs
 logs
