@@ -10,7 +10,6 @@ import Footer from './components/Footer/Footer.tsx'
 import Facilidades from './components/Facilidades/Facilidades.tsx'
 import CorpoClinico from './components/Corpo-Clinico/CorpoClinico.tsx'
 import Especialidades from './components/Especialidades/Especialidades.tsx'
-import Contatos from './components/Contatos/Contatos.tsx'
 import SobreNos from './components/SobreNos/SobreNos.tsx'
 import InfoFlore from './components/Info-Flore/InfoFlore.tsx'
 
@@ -26,7 +25,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/facilidades" element={<Facilidades />} />
         <Route path="/corpo-clinico" element={<CorpoClinico />} />
         <Route path="/especialidades" element={<Especialidades />} />
-        <Route path="/contatos" element={<Contatos />} />
+        <Route path="/consulta" element={<MarcarConsulta />} />
       </Routes>
       <InfoFlore />
       <Footer />
