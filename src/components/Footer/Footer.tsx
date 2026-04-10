@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Instagram from "../../assets/Instagram";
 import LinkedIn from "../../assets/LinkedIn";
 import Deezer from "../../assets/Deezer";
-import logoVertical from "../Images/LogoVertical-verde.png"
+import logoVertical from "../Images/LogoVertical-verde.png";
 
 function Footer() {
   let currentYear = new Date().getFullYear();
@@ -29,58 +29,59 @@ function Footer() {
               height={110}
             />
           </Link>
-          <span className={styles.floreFlorescer}>Venha florescer conosco!</span>
+          <span className={styles.floreFlorescer}>
+            Venha florescer conosco!
+          </span>
         </section>
         <nav>
           <ul className={styles.ulFooter}>
-            <div className={styles.sobreFac}>
-              <li>
-                <Link to="sobre-nos" onClick={scrollToTop}>
-                  <Button variant={"secondary"} isActive={false}>
-                    SOBRE NÓS
-                  </Button>
-                </Link>
-              </li>
-              <li>
-                <Link to="facilidades" onClick={scrollToTop}>
-                  <Button variant={"secondary"} isActive={false}>
-                    FACILIDADES
-                  </Button>
-                </Link>
-              </li>
-            </div>
-            <div className={styles.especCorpo}>
-              <li>
-                <li>
-                  <Link to="corpo-clinico" onClick={scrollToTop}>
-                    <Button variant={"secondary"} isActive={false}>
-                      CORPO CLÍNICO
-                    </Button>
-                  </Link>
-                </li>
-                <Link to="especialidades" onClick={scrollToTop}>
-                  <Button variant={"secondary"} isActive={false}>
-                    ESPECIALIDADES
-                  </Button>
-                </Link>
-              </li>
-            </div>
-            <div className={styles.infoContatos}>
-              <li>
-                <Link to="informacoes" onClick={scrollToTop}>
-                  <Button variant={"secondary"} isActive={false}>
-                    INFORMAÇÕES IMPORTANTES
-                  </Button>
-                </Link>
-              </li>
-              <li>
-                <Link to="contatos" onClick={scrollToTop}>
-                  <Button variant={"secondary"} isActive={false}>
-                    CONTATOS
-                  </Button>
-                </Link>
-              </li>
-            </div>
+            <li>
+              <Link to="sobre-nos" onClick={scrollToTop}>
+                <Button variant={"secondary"} isActive={false}>
+                  SOBRE NÓS
+                </Button>
+              </Link>
+            </li>
+
+            <li>
+              <Link to="facilidades" onClick={scrollToTop}>
+                <Button variant={"secondary"} isActive={false}>
+                  FACILIDADES
+                </Button>
+              </Link>
+            </li>
+
+            <li>
+              <Link to="corpo-clinico" onClick={scrollToTop}>
+                <Button variant={"secondary"} isActive={false}>
+                  CORPO CLÍNICO
+                </Button>
+              </Link>
+            </li>
+
+            <li>
+              <Link to="especialidades" onClick={scrollToTop}>
+                <Button variant={"secondary"} isActive={false}>
+                  ESPECIALIDADES
+                </Button>
+              </Link>
+            </li>
+
+            <li>
+              <Link to="informacoes" onClick={scrollToTop}>
+                <Button variant={"secondary"} isActive={false}>
+                  INFORMAÇÕES IMPORTANTES
+                </Button>
+              </Link>
+            </li>
+
+            <li>
+              <Link to="contatos" onClick={scrollToTop}>
+                <Button variant={"secondary"} isActive={false}>
+                  CONTATOS
+                </Button>
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -99,6 +100,7 @@ function Footer() {
         >
           <LinkedIn />
         </Link>
+
         <Link
           target="_blank"
           to={
