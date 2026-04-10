@@ -19,13 +19,13 @@
   background-color: rgb(255, 255, 255, 0.4);
   background-blend-mode: lighten;
   border: 1px solid #3c4a28;
-  margin-bottom: 20px;
+  margin: 25px 0;
   padding: 10px 300px;
   text-shadow: 0 0 20px #3c4a28;
 }
 
 .withoutBg {
-  margin: 0 20%;
+  margin: 20px 20%;
   padding: 0 100px;
 }
 
