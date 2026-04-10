@@ -1,15 +1,11 @@
-.quemSomos {
+.sobreNos {
     display: flex;
+    margin: auto;
     flex-direction: column;
     max-width: 800px;
-    text-align: center;
 }
 
-.quemSomos > h1 {
-    font-family: "Cormorant Garamond"
-}
-
-.quemSomos > p {
+.sobreNos > p {
     font-family: "Roboto Slab";
 }
 

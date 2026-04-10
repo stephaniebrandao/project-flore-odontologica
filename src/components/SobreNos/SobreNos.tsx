@@ -1,3 +1,4 @@
+import Header from "../Header/Header";
 import InsideBanner from "../InsideBanner/InsideBanner";
 import styles from "./sobreNos.module.css";
 
@@ -10,8 +11,8 @@ function SobreNos() {
 
   return (
     <>
-      <article className={styles.quemSomos}>
-        <h1>Quem somos</h1>
+      <div className={styles.sobreNos}>
+        <Header title={"Sobre Nós"} variant={"first"} />
         <p>
           A Flore Odontológica nasceu do desejo de transformar a ida ao dentista
           em uma experiência de renovação. Acreditamos que um sorriso saudável é
@@ -28,7 +29,7 @@ function SobreNos() {
           nossos pacientes: aquela em que sorrir não causa timidez, mas sim
           orgulho.
         </p>
-      </article>
+      </div>
 
       <section className={styles.missaoVisaoValores}>
         <InsideBanner title={"Missão:"} info={missao} />
@@ -40,24 +41,28 @@ function SobreNos() {
           info={
             <ul>
               <li>
-                <strong>Humanização:</strong> Tratamos pessoas, não apenas dentes. O acolhimento
-                é nossa prioridade.
+                <strong>Humanização:</strong> Tratamos pessoas, não apenas
+                dentes. O acolhimento é nossa prioridade.
               </li>
+              <br/>
               <li>
-                <strong>Ética e Transparência:</strong> Clareza total em cada diagnóstico e
-                conduta clínica.
+                <strong>Ética e Transparência:</strong> Clareza total em cada
+                diagnóstico e conduta clínica.
               </li>
+              <br/>
               <li>
-                <strong>Inovação:</strong> Investimento constante em tecnologias que garantam
-                tratamentos mais rápidos e confortáveis.
+                <strong>Inovação:</strong> Investimento constante em tecnologias
+                que garantam tratamentos mais rápidos e confortáveis.
               </li>
+              <br/>
               <li>
-                <strong>Excelência:</strong> Rigor técnico em cada detalhe, do atendimento
-                inicial ao pós-procedimento.
+                <strong>Excelência:</strong> Rigor técnico em cada detalhe, do
+                atendimento inicial ao pós-procedimento.
               </li>
+              <br/>
               <li>
-                <strong>Excelência:</strong> Rigor técnico em cada detalhe, do atendimento
-                inicial ao pós-procedimento.
+                <strong>Excelência:</strong> Rigor técnico em cada detalhe, do
+                atendimento inicial ao pós-procedimento.
               </li>
             </ul>
           }
