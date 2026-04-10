@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./facilidades.module.css";
 import { supabase } from "../../supabaseClient";
 import Header from "../Header/Header";
+import InformacoesImportantes from "../Informações Importantes/InformacoesImportantes";
 
 function Facilidades() {
   const [convenios, setConvenios] = useState<{ nome: string }[]>([]);
@@ -41,6 +42,8 @@ function Facilidades() {
             e numerário.
           </p>
         </ol>
+
+        <InformacoesImportantes />
     </>
   );
 }
