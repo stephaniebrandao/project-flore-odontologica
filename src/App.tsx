@@ -57,7 +57,6 @@ function App() {
             avaliação e acolhimento, onde entendemos suas necessidades e
             traçamos juntos o melhor caminho para cuidar do seu sorriso.
           </p>
-          <aside>Venha florescer conosco!</aside>
         </div>
       </section>
 
@@ -69,7 +68,7 @@ function App() {
       <div className={styles.consultaFlore}>
         <Link to={"consulta"}>
           <Button variant={"consulta"} isActive={false}>
-            Marque aqui!
+            Venha florescer conosco!
           </Button>
         </Link>
       </div>
