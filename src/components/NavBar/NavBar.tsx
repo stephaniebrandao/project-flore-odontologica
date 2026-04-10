@@ -6,24 +6,6 @@ import logoVerticalFlore from "../Images/LogoVertical-verde.png"
 function NavBar() {
   return (
     <header>
-      <nav className={styles.navSup} aria-label="Navegação Superior">
-        <ul>
-          <li>
-            <Link to="consulta">
-              <Button variant={"nav"} isActive={false}>
-                Marque aqui a sua consulta
-              </Button>
-            </Link>
-          </li>
-          <li>
-            <Link to="informacoes">
-              <Button variant={"nav"} isActive={false}>
-                Informações Importantes
-              </Button>
-            </Link>
-          </li>
-        </ul>
-      </nav>
       <div className={styles.gradientBar}>
         <Link to="/">
           <img
@@ -47,7 +29,7 @@ function NavBar() {
           <li>
             <Link to="facilidades">
               <Button variant={"primary"} isActive={false}>
-                FACILIDADES
+                FACILIDADES E INFORMAÇÕES
               </Button>
             </Link>
           </li>
@@ -66,9 +48,9 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="contatos">
+            <Link to="consulta">
               <Button variant={"primary"} isActive={false}>
-                CONTATOS
+                MARQUE A SUA CONSULTA
               </Button>
             </Link>
           </li>

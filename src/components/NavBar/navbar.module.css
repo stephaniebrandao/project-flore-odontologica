@@ -6,34 +6,19 @@ ul {
   background: linear-gradient(
     to right,
     #bdc8ac 0%,
-    transparent 35%,
-    transparent 65%,
+    transparent 0%,
+    transparent 10%,
     #bdc8ac 100%
   );
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 
 .imageFlore {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   background-color: rgba(246, 246, 239, 0);
-}
-
-.navSup ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  width: 100%;
-}
-
-.navSup li {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin: 0 10px;
+  margin-left: 200px;
 }
 
 .navPrincipal ul {
@@ -41,8 +26,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  width: 95%;
-  margin-left: 35px;
+  margin: 10px 210px;
 }
 
 /* Media Query */
@@ -52,8 +36,8 @@ ul {
     background: linear-gradient(
       to right,
       #bdc8ac 0%,
-      transparent 35%,
-      transparent 65%,
+      transparent 0%,
+      transparent 5%,
       #bdc8ac 100%
     );
   }
