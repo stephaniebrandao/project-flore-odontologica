@@ -1,5 +1,5 @@
 .container {
-    width: 600px;
+    width: 580px;
     margin: 0 auto;
 }
 
@@ -11,11 +11,9 @@
     min-height: fit-content;
     margin: 2rem 0;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     position: relative;
-    border: 1px solid rgb(119, 136, 92);
     border-radius: 10px;
-    box-shadow: 0px 0px 5px rgb(119, 136, 92);
 }
 
 .open {
@@ -26,7 +24,7 @@
     font-size: 2rem;
     position: absolute;
     right: 20px;
-    top: -3px;
+    top: -12px;
     transition: transform 0.3s ease;
 }
 
