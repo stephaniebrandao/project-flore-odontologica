@@ -10,12 +10,6 @@
   font-size: 14px;
   margin: 0;
 }
-.titleSpecs > aside {
-    font-family: "Cormorant Garamond";
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 30px;
-}
 
 /* Media Query */
 
@@ -30,12 +24,5 @@
     font-size: 15px;
     line-height: 1.5;
     text-align: center;
-  }
-
-  .titleSpecs > aside {
-    font-size: 18px; 
-    margin-top: 20px;
-    text-align: center;
-    width: 100%;
   }
 }

@@ -28,20 +28,17 @@ function Especialidades() {
   return (
     <>
       <Header
-        title={"Especialidades Focadas na Sua Saúde"}
+        title={"Especialidades focadas na sua saúde"}
         subtitle={subtitle}
         variant={"first"}
       />
       <div className={styles.titleSpecs}>
         <p>Estamos prontos para cuidar de si!</p>
-        <aside>Venha florescer conosco!</aside>
       </div>
-      <div>
         {especialidades.map((especialidade) => (
           <Card
             image={
               <img
-                style={{ width: "100px", height: "100px", borderRadius: "50%" }}
                 src={especialidade.imagem}
               />
             }
@@ -50,7 +47,6 @@ function Especialidades() {
             variant={"specs"}
           />
         ))}
-      </div>
     </>
   );
 }
